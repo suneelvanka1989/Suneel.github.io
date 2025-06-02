@@ -1,0 +1,229 @@
+.search-result-page {
+  .video-consult {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.result-header {
+  font-size: 1.563rem !important;
+  font-weight: 700 !important;
+  line-height: 1.8rem !important;
+  margin-bottom: 8px !important;
+  padding-top: 15px;
+  @media (max-width: 600px) {
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+    padding-top: 0;
+  }
+}
+
+.dropdowns {
+  display: flex;
+  gap: 30px;
+  border-bottom: 3px solid #6d6c6c;
+  .dropdown-header {
+    color: var(--title, #282e36);
+    font-family: Poppins;
+    font-size: 1.025rem;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 6px;
+  }
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
+}
+
+.nav-dropdown {
+  display: flex;
+  gap: 50px;
+  color: var(--title, #282e36);
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  .dropbtn {
+    color: #000000;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .dropdown {
+    gap: 20px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #6d6c6c;
+    z-index: 2;
+    padding: 10px;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+#result-top {
+  grid-area: resultTop;
+}
+#sidePan {
+  grid-area: sidePan;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: "resultTop resultTop resultTop resultTop sidePan";
+  gap: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (max-width: 1280px) {
+    grid-template-areas:
+      "resultTop resultTop resultTop sidePan sidePan"
+      "resultBottom resultBottom resultBottom sidePan sidePan";
+    gap: 20px;
+  }
+  @media (max-width: 1280px) {
+    grid-template-areas: "resultTop resultTop resultTop sidePan sidePan";
+    gap: 20px;
+  }
+  @media (max-width: 600px) {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+.result-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: max-content;
+}
+
+.doctor-card-action {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.right-side-nav {
+  .result-need-assistance {
+    background: rgba(232, 232, 232, 0.5);
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    .form-container {
+      .mat-mdc-form-field {
+        display: flex;
+      }
+    }
+  }
+}
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 15px;
+  .article {
+    display: flex;
+    flex-direction: column;
+    figure {
+      margin: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .article-heading {
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 20px;
+  }
+  .article-description {
+    font-weight: 500;
+  }
+}
+.email-input {
+  border: 0.5px solid #6d6c6c;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0px 4px 2px 4px;
+}
+
+.names {
+  display: flex;
+  gap: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.pigmentation {
+  display: flex;
+  justify-content: end;
+  margin-right: 100px;
+  gap: 40px;
+}
+.search-result-page .results {
+  position: relative;
+  .m-result-filter {
+    position: absolute;
+    min-height: 100px;
+    border: 1px solid gray;
+    width: 100%;
+    top: 100%;
+    background-color: #f8f8f8;
+    margin-top: -2px;
+    padding: 5px;
+    box-sizing: border-box;
+    &::before {
+      content: "";
+      border-left: solid 5px transparent;
+      border-right: solid 5px transparent;
+      border-bottom: solid 5px #f8f8f8;
+      height: 0;
+      width: 0;
+      display: block;
+      right: 40px;
+      margin-top: -10px;
+      position: absolute;
+    }
+  }
+}
+
+/* mobile app */
+
+@media (max-width: 600px) {
+  .dropdowns {
+    border-bottom: 1px solid #aaaaaa;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    .dropdown {
+      display: none;
+    }
+  }
+  .filter {
+    display: flex;
+  }
+  .doctor-profile-results {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles-list {
+    display: none;
+  }
+}

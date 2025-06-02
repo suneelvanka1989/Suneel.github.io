@@ -1,0 +1,77 @@
+<div class="docphine-main d-appointment-page">
+  <h3 class="page-section-title">Confirm Your Appointment</h3>
+  <p>Set a date and time to consult with your selected doctor.</p>
+
+  <div class="d-grid d-appointment-container">
+    <div class="profile">
+      <mat-card class="d-profile-card mb-20">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+            <img
+              src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+            />
+          </div>
+          <mat-card-title>Dr. Rekha Mahajan</mat-card-title>
+          <mat-card-subtitle class="d-profile-titles">
+            <span>Cardiologists</span>
+            <span>5 Years Experience</span>
+          </mat-card-subtitle>
+          <mat-card-subtitle class="d-profile-titles">
+            <span>Location: Green Park</span>
+            <span>Max Hospital</span>
+          </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+
+
+      <mat-card class="d-profile-card">
+        <mat-card-header>
+          <div class="d-chip">Consultation fess 300 Rs</div>
+          <mat-divider></mat-divider>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="selection-wrapper">
+            <section class="d-periods">
+              <div class="period" *ngFor="let available of availability">
+                <p><i class="fa-solid fa-sun"></i> {{ available.period }}</p>
+                <mat-chip-listbox aria-label="Fish selection">
+                  <mat-chip-option *ngFor="let slot of available.slots">{{
+                    slot
+                  }}</mat-chip-option>
+                  <!-- <mat-chip-option>Two fish</mat-chip-option>
+                    <mat-chip-option color="accent" selected
+                      >Accent fish</mat-chip-option
+                    >
+                    <mat-chip-option color="warn">Warn fish</mat-chip-option> -->
+                </mat-chip-listbox>
+              </div>
+            </section>
+
+            <mat-card class="demo-inline-calendar-card">
+              <mat-calendar [(selected)]="selected"></mat-calendar>
+            </mat-card>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+            <button mat-flat-button color="accent" class="btn-lg">
+              Book Consulation
+            </button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+    <div class="similarProfile">
+      <mat-card *ngFor="let card of [1,2,3,4,5]">
+        <figure>
+          <img src="../../assets/img/doctor-image.png" />
+        </figure>
+        <h4>Dr. Rekha Mahajan</h4>
+        Cardiologists <br />
+        5 Years Experience
+      </mat-card>
+    </div>
+  </div>
+</div>

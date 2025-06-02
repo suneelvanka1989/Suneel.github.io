@@ -1,0 +1,460 @@
+<div class="page-title">
+    <p class="confirmation-title">Confirm your appointment </p>
+    <p class="page-sub-title"> Set a date and time to consult with your selected doctor.</p>
+</div>
+
+<div class="appointment-details">
+    <div class="profile-lab">
+        <img src="../../assets/img/labtests/lab-profile-img.svg" alt="img">
+        <p class="lab-title">{{labTitle}}</p>
+        <p class="lab-subtitle">{{labSubTitle}}</p>
+        <p class="side-title">Location :</p>
+        <p class="address-lab">MIG - 148 - I - NCK 24/240,
+            Road No 1 KPHB Colony,
+            Opposite To Sankhya Hospital,
+            Kukatpally, Hyderabad - 500072,
+            <span><a class="address-lable" (click)="showMoreClinics()">Change Clinic </a></span> 
+        </p>
+        
+        <p class="side-title">Contact :</p>
+        <p class="ph-num">+91 12345 67890</p>
+    </div>
+
+
+    <div class="test-section">
+        <div class="details-section">
+            <div class="patient-details">
+                <mat-card class="patient-profile">
+                    <div class="patient-card-title">
+                        <p class="card-title">patient-details</p>    
+                    </div>
+                    
+                    <div class="line"></div>
+                    <div class="patient-name">
+
+                        <div class="p-details">
+                            <p class="patient p-title">Vidyesha Pandey</p>
+                            <span class="s-title">23 Years</span>/
+                            <span class="s-title">Female</span>/
+                            <span class="s-title">Dr. Self</span>
+                        </div>
+                        <button mat-button class="edit-button" (click)="editPatientFields()">
+
+                            Edit
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <button mat-button class="add-patient-button" (click)="addPatientFields()">
+
+                        Add new patient
+                    </button>
+
+
+
+                </mat-card>
+            </div>
+            <div class="doctor-details">
+                <mat-card class="doctor-profile">
+                    <mat-card-content>
+                        <div class="doctor-details">
+                            <p>Doctor Details</p>
+                            <div class="line"></div>
+                            <div class="dr-details">
+
+                                <span class="dr-title">Dr.</span>
+                                <span class="dr-name">Self</span>
+
+                            </div>
+                        </div>
+                    </mat-card-content>
+
+
+                </mat-card>
+            </div>
+        </div>
+        <div class="test-details">
+            <mat-card class="test-list">
+                <div class="card-header d-header">
+                    <div class="test-display">
+                        <p class="t-text">Test Details</p>
+                    </div>
+                    <div class="add-more-button">
+                        <button mat-button class="add-more" (click)="openPatientFields()">
+                            + Add More Tests
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="line"></div>
+
+                <div class="test-type card-header">
+                    <div class="test-name">
+                        <mat-card-header>
+                            <p class="card-title">Mri Brain with Cisternography</p>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p class="price">Price: Rs. 300/-</p>
+                        </mat-card-content>
+                        <mat-card-content>
+                            <p class="note list-content">Note :</p>
+                            <li class="note-description list-content">Reports available in: 48hours after test / sample
+                                collection</li>
+                        </mat-card-content>
+                    </div>
+                    <div class="remove-button">
+                        <button mat-button class="button-span-color remove">
+                            <mat-icon class="button-span-color">delete</mat-icon>
+                            Remove
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+
+                <div class="test-type card-header">
+                    <div class="test-name">
+                        <mat-card-header>
+                            <p class="card-title">X-Ray Both Wrist Lat View</p>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p class="price">Price: Rs. 300/-</p>
+                        </mat-card-content>
+                        <mat-card-content>
+                            <p class="note list-content">Note :</p>
+                            <li class="note-description list-content">Reports available in: 48hours after test / sample
+                                collection</li>
+                        </mat-card-content>
+                    </div>
+                    <div class="remove-button">
+                        <button mat-button class="button-span-color remove">
+                            <mat-icon class="button-span-color">delete</mat-icon>
+                            Remove
+                        </button>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="total-bill">
+                    <p class="total p-title">Total Amount to be paid</p>
+                    <p class="total-amount">Rs. 300/-</p>
+                </div>
+
+
+            </mat-card>
+        </div>
+
+        <button mat-raised-button color="accent" (click)="navigateToPackages(paymentGateway)" class="confirm-slot-button">Confirm Slot</button>
+    </div>
+</div>
+
+
+
+<!-- add-patient fields -->
+
+<div class="over-lay" *ngIf="addPatient">
+
+    <mat-card class="content">
+
+        <div>
+            <div class="form-patient-details">
+
+                <div class="popup-card-header">
+                    <p class="card-text">Add New patient</p>
+                    <div class="close">
+                        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="closeTab()">
+                            <mat-icon class="close-icon">close_mark</mat-icon>
+                          </button>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+        
+                <div class="patient-name-field">
+                    <input type="text" placeholder="Enter Ptient Name" class="patient-name-input">
+                </div>
+
+
+                    <div class="gender-selector">
+                        <mat-chip-listbox aria-label="genders" class="genders">
+                            <mat-chip-option color="accent" class="gender-button male"><i class="fa-solid fa-mars"></i>Male</mat-chip-option>
+                            <mat-chip-option color="accent" class="gender-button female"><i class="fa-solid fa-venus"></i>Female</mat-chip-option>
+                            <mat-chip-option color="accent" class="gender-button other">Others</mat-chip-option>
+                        </mat-chip-listbox>
+                    </div>
+
+
+                    <div class="dob-fields">
+
+                        <div class="date-birth-picker">
+
+                            <input matInput [matDatepicker]="picker" placeholder="Enter DOB (MM/DD/YYYY)" class="dob-input">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+
+                        </div>
+                        <p>Or</p>
+
+                        <input type="text" class="age-in-years" placeholder="Age in Years">
+                    </div>
+
+
+
+
+                <div class="note-list">
+
+                    <p style="color: #FF0000;">Note:</p>
+                    <ul>
+                        <li> All Fields are Mandatory</li>
+                        <li>You can enter either the Date Of Birth or the Age of the patient for their age</li>
+                        <li>To enter the age of an infant, please use the Date of Birth field</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="save-button">
+            <button mat-button class="button-span-color remove">
+                Save & Continue
+            </button>
+
+        </div>
+    </mat-card>
+
+
+</div>
+
+<!-- edit patient -->
+
+<div class="over-lay" *ngIf="editPatientDetails">
+
+    <mat-card class="content">
+
+        <div>
+            <div class="form-patient-details">
+
+                <div class="popup-card-header">
+                    <p class="card-text">Add New patient</p>
+                    <div class="close">
+                        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="closeTab()">
+                            <mat-icon class="close-icon">close_mark</mat-icon>
+                          </button>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+
+                    <div class="patient-name-field">
+                        <input type="text" placeholder="Full Name" class="patient-name-input">
+                    </div>
+
+
+                    <div class="gender-selector">
+                        <mat-chip-listbox aria-label="genders" class="genders">
+                            <mat-chip-option color="accent" class="gender-button male"><i class="fa-solid fa-mars"></i>Male</mat-chip-option>
+                            <mat-chip-option color="accent" class="gender-button female"><i class="fa-solid fa-venus"></i>Female</mat-chip-option>
+                            <mat-chip-option color="accent" class="gender-button other">Others</mat-chip-option>
+                        </mat-chip-listbox>
+                    </div>
+
+
+                    <div class="dob-fields">
+
+                        <div class="date-birth-picker">
+
+                            <input matInput [matDatepicker]="picker" placeholder="Enter DOB (MM/DD/YYYY)" class="dob-input">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+
+                        </div>
+                        <p>Or</p>
+
+                        <input type="text" class="age-in-years" placeholder="Age in Years">
+                    </div>
+
+                
+
+
+
+                <div class="note-list">
+
+                    <p style="color: #FF0000;">Note:</p>
+                    <div class="note-list">
+                        <ul>
+                            <li>All Fields are Mandatory</li>
+                            <li>You can enter either the Date Of Birth or the Age of the patient for their age</li>
+                            <li>To enter the age of an infant, please use the Date of Birth field</li>
+                          </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="save-button">
+            <button mat-button class="button-span-color remove">
+                Save & Continue
+            </button>
+
+        </div>
+
+    </mat-card>
+
+
+</div>
+
+
+
+
+<!-- Change Clinic Options -->
+<div class="popup-more-labs" *ngIf="otherClinics">
+
+    <mat-card class="more-labs-list">
+        <div class="more-labs-header">
+            <div class="lab-profile-image">
+                <img src="../../../../assets/img/lab-profile/more-labs.svg" alt="">
+            </div>
+            <div class="more-lab-title">
+                <p class="lab-name">
+                    Aarthi Scans & Labs
+                </p>
+                <p class="lab-desc">Multi-specialty Clinic</p>
+                <div class="rating-stars">
+                    <mat-icon>star_border</mat-icon>
+                    <mat-icon>star_border</mat-icon>
+                    <mat-icon>star_border</mat-icon>
+                    <mat-icon>star_border</mat-icon>
+                    <mat-icon>star_border</mat-icon>
+                </div>
+            </div>
+
+            <div class="close-button">
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="closeTab()">
+                    <mat-icon class="close-icon">close_mark</mat-icon>
+                  </button>
+            </div>
+
+        </div>
+        
+        <div class="branch-details" *ngFor="let a of [1, 2, 3]">
+            <div class="lab-details-description">
+                <div class="more-lab-title">
+                    <p class="lab-name">
+                        Aarthi Scans & Labs
+                    </p>
+                    <p class="lab-desc">Multi-specialty Clinic</p>
+                </div>
+                <div class="branch-address">
+                    <p class="lab-address-location">Kukatpally, Hyderabad - 500072
+                        <span>Clinic Fees :</span>
+                        <span>300/-</span>
+                    </p>
+                </div>
+            </div>
+            <div class="lab-select-button">
+                <button mat-button class="button-span-color remove">Select</button>
+            </div>
+        </div>
+
+    </mat-card>
+
+
+</div>
+
+
+
+<!-- add more tests tab -->
+
+<div class="over-lay popup-more-tests" *ngIf="addMoreTests">
+
+    <mat-card class="card-more-test">
+       
+
+        <div class="add-patient-tab">
+
+            <div class="search-more-tests">
+                <mat-form-field class="search-test">
+                    <mat-icon matPrefix>search</mat-icon>
+                    <input matInput type="search" placeholder="Search" class="search-input" />
+                </mat-form-field>
+                <div class="search-test-close-button">
+                    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="closeTab()">
+                        <mat-icon class="close-icon">close_mark</mat-icon>
+                      </button>
+                </div>
+            </div>
+            
+
+            <mat-card-content>
+                <div class="test-list">
+                    <div class="list-test-names">
+
+
+
+
+                        <section class="more-test-section">
+                            <label class="more-test-margin">Popularly searched test:</label>
+                            <mat-radio-group class="test-names">
+                                <mat-radio-button class="example-margin" name="option1" [(ngModel)]="option1">
+                                    
+                                        <span class="test-name">Mri Scan</span>
+                                    <span class="original-price">500</span>
+                                    <span class="offer-price">200</span>
+                                    
+                                </mat-radio-button>
+
+                                <mat-radio-button class="example-margin" name="option1" [(ngModel)]="option1">
+                                    <span class="test-name">Mri Scan</span>
+                                    <span class="original-price">500</span>
+                                    <span class="offer-price">200</span>
+                                </mat-radio-button>
+
+                                <mat-radio-button class="example-margin" name="option1" [(ngModel)]="option1">
+                                    <span class="test-name">Mri Scan</span>
+                                    <span class="original-price">500</span>
+                                    <span class="offer-price">200</span>
+                                </mat-radio-button>
+
+                                <mat-radio-button class="example-margin" name="option1" [(ngModel)]="option1">
+                                    <span class="test-name">Mri Scan</span>
+                                    <span class="original-price">500</span>
+                                    <span class="offer-price">200</span>
+                                </mat-radio-button>
+
+                                <mat-radio-button class="example-margin" name="option1" [(ngModel)]="option1">
+                                    <span class="test-name">Mri Scan</span>
+                                    <span class="original-price">500</span>
+                                    <span class="offer-price">200</span>
+                                </mat-radio-button>
+
+                                <mat-radio-button class="example-margin" name="option1" [(ngModel)]="option1">
+                                    <span class="test-name">Mri Scan</span>
+                                    <span class="original-price">500</span>
+                                    <span class="offer-price">200</span>
+                                </mat-radio-button>
+                            </mat-radio-group>
+                        </section>
+
+                    </div>
+                </div>
+
+            </mat-card-content>
+
+            <div class="test-save-button">
+                <button mat-raised-button class="save-button" color="accent">Save</button>
+            </div>
+
+
+
+        </div>
+    </mat-card>
+
+
+</div>
+
+
+

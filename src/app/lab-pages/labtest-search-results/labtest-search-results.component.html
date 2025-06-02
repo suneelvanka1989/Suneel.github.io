@@ -1,0 +1,215 @@
+<div class="page-title">
+  <p class="page-header">100 labs for Mri Brain with Cisternography</p>
+</div>
+
+<div class="filter-section">
+  <div class="availability"></div>
+</div>
+
+<div class="dropdowns">
+  <div class="nav-dropdown">
+    <div class="dropdown">
+      <mat-label>Availability</mat-label>
+      <div class="dropdown-content">
+        <mat-radio-group aria-label="availability">
+          <mat-radio-button value="1">Today</mat-radio-button>
+          <mat-radio-button value="2">tomorrow</mat-radio-button>
+          <mat-radio-button value="2">Sunday</mat-radio-button>
+          <mat-radio-button value="2">Monday</mat-radio-button>
+          <mat-radio-button value="2">Tuesday</mat-radio-button>
+          <mat-radio-button value="2">Wednesday</mat-radio-button>
+          <mat-radio-button value="2">Thursday</mat-radio-button>
+          <mat-radio-button value="2">Friday</mat-radio-button>
+          <mat-radio-button value="2">Saturday</mat-radio-button>
+        </mat-radio-group>
+        <button mat-raised-button color="accent">Apply Filter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-dropdown">
+    <div class="dropdown">
+      <mat-label>Sory By</mat-label>
+      <div class="dropdown-content">
+        <mat-radio-group aria-label="availability">
+          <mat-radio-button value="1">Near By</mat-radio-button>
+          <mat-radio-button value="2">Low to High</mat-radio-button>
+          <mat-radio-button value="2">High to Low</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bottom-line"></div>
+
+
+
+
+<div class="labs-results-page">
+  <div class="lab-profiles-results">
+    <div class="lab-popular-labs-card" *ngFor="let a of [1,2,3,4,5,6,7,8]">
+      <mat-card class="profile-image-card">
+        <div class="profile-image-slide">
+          <!-- <img src="../../assets/img/labtest_search_results/labtest_image.svg" alt="lab_image_is_here"> -->
+          <mat-card-content class="lab-profile-slider">
+            <div>
+              <owl-carousel-o [options]="imageOptions" class="image-slider  lab-test-result-carousel">
+                <ng-template carouselSlide>
+                  <img src="../../assets/img/labtest_search_results/labtest_image.svg" alt="Image"
+                    class="profile-image" />
+                </ng-template>
+                <ng-template carouselSlide>
+                  <img src="../../../assets/img/labtest_search_results/labtest_image.svg" alt="Image"
+                    class="profile-image" />
+                </ng-template>
+                <ng-template carouselSlide>
+                  <img src="../../../assets/img/labtest_search_results/labtest_image.svg" alt="Image"
+                    class="profile-image" />
+                </ng-template>
+                <ng-template carouselSlide>
+                  <img src="../../../assets/img/labtest_search_results/labtest_image.svg" alt="Image"
+                    class="profile-image" />
+                </ng-template>
+                <ng-template carouselSlide>
+                  <img src="../../../assets/img/labtest_search_results/labtest_image.svg" alt="Image"
+                    class="profile-image" />
+                </ng-template>
+              </owl-carousel-o></div>
+
+            
+          </mat-card-content>
+        </div>
+      </mat-card>
+      <mat-card class="lab-details">
+        <mat-card-header class="lab-name-header">
+          <mat-card-title class="name-of-the-lab">{{labName}}</mat-card-title>
+          <mat-card-subtitle class="service-type">Home Service availables</mat-card-subtitle>
+        </mat-card-header>
+        <div class="rating-band">
+          <div class="rate-badge">
+            <span class="rating-number">1</span>
+            <mat-icon>star_border</mat-icon>
+          </div>
+          <div class="rating-stars">
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+          </div>
+          <span class="d-flex">1 </span>
+        </div>
+        <div class="d-flex-center mb-5">
+          <mat-icon class="icon-color-gray">people</mat-icon>
+          <!-- Should have different property -->
+          <span class="pl-10">114 Patient Stories</span>
+        </div>
+        <div class="d-flex-center">
+          <mat-icon matPrefix class="icon-color-gray">location_on</mat-icon>
+          <span class="pl-10">Kukatpally</span>
+          <p class="more"><a href="">+3 more</a></p>
+        </div>
+
+        <div class="profile-feature-icons">
+          <div class="c-icons">
+            <i class="fa-solid fa-circle-check" matTooltip="verified"
+            aria-label="Button that displays a tooltip when focused or hovered over"></i>
+          </div>
+
+          <div class="c-icons">
+            <i class="fa-solid fa-wallet" matTooltip="refund"
+            aria-label="Button that displays a tooltip when focused or hovered over"></i>
+          </div>
+          
+          <div class="c-icons">
+            <i class="fa-solid fa-wheelchair" matTooltip="Wheel Chair"
+            aria-label="Button that displays a tooltip when focused or hovered over"></i>
+          </div>
+          
+          <div class="c-ic">
+            <i class="fa-regular fa-credit-card" matTooltip="credit card acceptance"
+            aria-label="Button that displays a tooltip when focused or hovered over"></i>
+          </div>
+          <div class="c-icons">
+            <i class="fa-solid fa-car-side" matTooltip="car parking"
+            aria-label="Button that displays a tooltip when focused or hovered over"></i>
+          </div>
+          <div class="">
+            <p class="card-price">300/-</p>
+          </div>
+        </div>
+
+        <div class="profile-buttons">
+          <mat-card-actions class="profile-view-buttons">
+            <button mat-raised-button color="accent" (click)="navigateToLabViewProfile(labProfile)" class="btn-view-profile">View Profile</button>
+          </mat-card-actions>
+          <mat-card-actions class="profile-view-buttons">
+            <button mat-raised-button color="primary" (click)="navigateToConfirmAAppointment(bookSlot)" class="btn-bookslot">Book Slot</button>
+          </mat-card-actions>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="search-area">
+    <mat-card class="search-card">
+      <div class="search-header">
+        <i class="fa fa-earth"></i>
+        <p class="search-area-header">Filter with the help of area</p>
+      </div>
+
+      <div class="search-fields ">
+        
+        <!-- <mat-form-field>
+          <mat-select [formControl]="toppings" multiple>
+            <mat-select-trigger>
+              {{toppings.value?.[0] || ''}}
+              @if ((toppings.value?.length || 0) > 1) {
+                <span class="example-additional-selection">
+                  (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                </span>
+              }
+            </mat-select-trigger>
+            @for (topping of toppingList; track topping) {
+          <mat-option [value]="topping">{{topping}}</mat-option>
+        }
+          </mat-select>
+        </mat-form-field> -->
+
+
+        <mat-form-field class="area-filter">
+          <mat-icon matPrefix>search</mat-icon>
+          <input matInput type="search" placeholder="Search" class="area-select"/>
+          <mat-autocomplete #mainSeach="matAutocomplete">
+            <mat-optgroup>
+              <mat-option>
+                <div class="media media-container">
+                  <img class="mr-3" alt="30x30" src="https://placehold.jp/30x30.png" data-holder-rendered="true"
+                    style="width: 30px; height: 30px" />
+                  <div class="media-body">
+                    <div fxLayout="row">
+                      <div>
+                        <h5 class="mb-0"></h5>
+                        <small></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-option>
+            </mat-optgroup>
+          </mat-autocomplete>
+        </mat-form-field>
+      
+      
+      </div>
+    </mat-card>
+
+
+  </div>
+</div>
+
+<div class="pagenator">
+  <mat-paginator [length]="10" [pageSizeOptions]="[1,2,3,4,5,6,7,8,9,10]" c aria-label="Select page">
+  </mat-paginator>
+</div>

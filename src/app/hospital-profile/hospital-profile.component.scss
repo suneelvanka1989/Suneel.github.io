@@ -1,0 +1,116 @@
+.d-profile-page-card {
+    box-shadow: none !important;
+    border: none transparent !important;
+    overflow: hidden;
+    .mat-mdc-card-header {
+      z-index: 2;
+      padding-left: 20px;
+      padding-right: 20px;
+      @media (max-width: 600px) {
+        padding-top: 0;
+        margin-top: -40px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .mat-mdc-card-title {
+        color: rgba(1, 78, 134, 1);
+        font-weight: 700;
+      }
+    }
+    .mat-mdc-card-content {
+      padding: 0;
+      @media (max-width: 600px) {
+        padding-bottom: 0 !important;
+      }
+    }
+    @media (max-width: 600px) {
+      flex-direction: column-reverse !important;
+      .d-profile-titles span{
+        font-size: 11px;
+      }
+    }
+  
+    .doctor-dashboard {
+      @media (min-width: 600px) {
+        padding: 8px 0;
+        display: inline-flex;
+      }
+      @media (max-width: 600px) {
+        .image {
+          width: 68px;
+        }
+        img {
+          width: 68px;
+          height: 66px;                
+        }
+      }
+      .doctor-details {
+        @media (max-width: 600px) {
+          padding-top: 50px;
+        }
+        .doctor-name {
+          color: rgba(1, 78, 134, 1);
+        }
+      }
+    }
+  }
+  
+  .d-profile-main {
+    padding-bottom: 30px;
+    @media (max-width: 600px) {
+      padding-bottom: 80px;
+    }
+  }
+  
+  .d-profile-tabs {
+    
+    @media (max-width: 600px) {
+      z-index: 3;
+      position: fixed !important;
+      padding: 0;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      .mat-mdc-tab-header-pagination {
+        display: none !important;
+      }
+    }
+  }
+  
+  .profile-slider {
+    position: relative;
+    margin-top: -60px;
+    @media (max-width: 600px) {
+      margin-top: 0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    img {
+      min-width: 100%;
+      height: 230px;
+    }
+  }
+  
+  .profile-page-content-container {
+    margin: -55px 5% 0;
+    padding-bottom: 30px;
+    border-left: 1px solid rgb(194, 192, 192);
+    border-right: 1px solid rgb(194, 192, 192);
+    border-bottom: 1px solid rgb(194, 192, 192);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    .profile-sections {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media (max-width: 600px) {
+      margin: 0;
+      border: none;
+      .profile-sections {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  

@@ -1,0 +1,29 @@
+// Typography rules
+@use '@angular/material' as mat;
+@include mat.core();
+
+$docphine-font: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 400,
+  $font-size: 1rem,
+  $line-height: 1,
+  $letter-spacing: normal
+);
+
+$docphine-typography-config: mat.define-typography-config(
+  $font-family: '"Poppins", "Helvetica Neue", sans-serif',
+  $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $headline-2: mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $headline-3: mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $headline-4: mat.define-typography-level(34px, 34px, 400),
+  $headline-5: mat.define-typography-level(3.125rem, 3.125rem, 700),
+  $headline-6: mat.define-typography-level(2.2rem, 3rem, 700),
+  $subtitle-1: mat.define-typography-level(1.05rem, 1.25rem, 500),
+  $subtitle-2: mat.define-typography-level(1.05rem, 1.125rem, 500),
+  $body-1: mat.define-typography-level(1.05rem, 1.125rem, 400),
+  $body-2: mat.define-typography-level(0.975rem, 1.125em, 400),
+  $caption: mat.define-typography-level(0.625rem, 0.725rem, 500),
+  $button: mat.define-typography-level(140px, 32px, 900)
+);
+
+@include mat.typography-hierarchy($docphine-typography-config);

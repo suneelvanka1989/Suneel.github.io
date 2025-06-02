@@ -1,0 +1,45 @@
+// inputs
+.dropDown-seasons-panel {
+  border-radius: 10px !important;
+}
+.d-home-desktop-search {
+  padding-top: 120px;
+}
+.landing-search {
+  position: relative;
+  text-align: center;
+
+  .mat-mdc-tab-list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mat-mdc-tab-label-container {
+    border-bottom: 3px solid rgba(76, 87, 102, 0.25);
+  }
+  .mdc-tab__text-label {
+    font-size: 120%;
+    font-weight: 600;
+  }
+}
+
+.d-home-desktop-search {
+  padding-top: 125px;
+  .d-location {
+    flex-grow: 1;
+  }
+  .form-container {
+    gap: 20px;
+    @media (max-width: 619px) {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 600px) {
+    padding-top: 20px;
+  }
+  .mdc-evolution-chip-set {
+    display: inline-flex;
+  }
+  .mdc-text-field__input {
+    width: auto;
+  }
+}

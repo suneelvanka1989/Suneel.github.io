@@ -1,0 +1,53 @@
+
+.d-profile-card {
+  font-family: "Poppins", sans-serif !important;
+  .mat-mdc-card-header {
+    .mat-mdc-card-title {
+      font-family: "Poppins", sans-serif !important;
+      font-size: 25px !important;
+      @media (max-width: 600px) {
+        font-size: 1.138rem !important;
+      }
+    }
+  }
+  .mat-mdc-card-avatar {
+    margin-bottom: 0;
+    width: 60px;
+    height: 60px;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .mat-mdc-card-avatar,
+  .mat-mdc-card-header-text {
+    background: white !important;
+  }
+}
+
+
+.d-profile-titles {
+    span {
+      display: inline-block;
+      padding-right: 8px;
+      margin-right: 5px;
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        right: 0;
+        top: 4px;
+        height: 10px;
+        background-color: rgb(216, 216, 216);
+      }
+      &:last-of-type {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }

@@ -1,0 +1,55 @@
+<!-- https://stackblitz.com/edit/responsive-menu-angular-material-flex-layout?file=src%2Fapp%2Fapp.component.html -->
+
+<mat-toolbar color="primary" role="navigation" class="d-nav-header">
+  <mat-toolbar-row>
+    <button class="h-menu"
+      mat-icon-button
+      (click)="sidenav.toggle()"
+      fxShow="true"
+      fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="logo">
+      <a href="#">
+        <img src="../../../../assets/img/logo.svg" alt="DocPhine" />
+      </a>
+    </div>
+    <span class="menu-spacer"></span>
+    <div class="nav-buttons" role="menubar" fxShow="true" fxHide.lt-md>
+      <button mat-button routerLink="/search" *ngIf="!hideInSearchPage && !hideInLabtestSearchPage">Search Expert</button>
+      <button mat-button routerLink="/about" *ngIf="!hideInSearchPage && !hideInLabtestSearchPage">Talk Online</button>
+      <button mat-button routerLink="/labtest-search" *ngIf="!hideInSearchPage && !hideInLabtestSearchPage">Test Appointment</button>
+      <button
+        mat-raised-button
+        mat-button
+        color="accent"
+        routerLink="/services">
+        Schedule a Surgery
+      </button>
+      <button mat-button (click)="navigateOrderOverViewPage(cart)"><mat-icon svgIcon="unicorn"></mat-icon></button>
+    </div>
+    <button mat-stroked-button routerLink="/contact" class="login">Login/Sign In</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav>
+    <div class="d-flex sidebarClose"><a (click)="sidenav.toggle()" href="" mat-list-item><i class="fa-solid fa-xmark"></i></a></div>
+    <mat-nav-list class="sidebar-nav">
+      <a href="#" mat-list-item><h4>Top Services</h4></a>
+      <div  class="item-text">
+        <a href="/search" mat-list-item><i class="fa-solid fa-magnifying-glass"></i>Search Expert</a>
+        <a href="#" mat-list-item><i class="fa-solid fa-video"></i>Talk Online</a>
+        <a href="#" mat-list-item><i class="fa-solid fa-cart-plus"></i>Pharmacy</a>
+        <a href="/labtest-search" mat-list-item><i class="fa-solid fa-flask"></i>Test Appointment</a>
+        <a href="#" mat-list-item><i class="fa-solid fa-stretcher"></i>Surgery</a>
+      </div>
+      <a href="#" mat-list-item><h4>Other Services</h4></a>
+      <div class="item-text">
+        <a href="#" mat-list-item>For Patients:</a>
+        <a href="#" mat-list-item>For Doctors:</a>
+        <a href="#" mat-list-item>Contact us</a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>

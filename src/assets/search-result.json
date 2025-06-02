@@ -1,0 +1,241 @@
+{
+    "Doctors" : [
+        {
+            "DoctorID": "1",
+            "HospitalID": "1",
+            "DoctorName": "Dr. Vandana Hegde",
+            "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+            "SpecializationID": "7",
+            "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+            "SpecializationName": "Gynecologist",
+            "Designation": "MBBS",
+            "Fees": 1500,
+            "Experiment": "15",
+            "TotalRatings": 100,
+            "Ratings": 3,
+            "Address": "Yeshwanthpur, Bengaluru"
+        },
+        {
+            "DoctorID": "1",
+            "HospitalID": "1",
+            "DoctorName": "Dr. Vandana Hegde",
+            "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+            "SpecializationID": "7",
+            "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+            "SpecializationName": "Gynecologist",
+            "Designation": "MBBS",
+            "Fees": 0,
+            "Experiment": "15",
+            "TotalRatings": 100,
+            "Ratings": 3,
+            "Address": "Yeshwanthpur, Bengaluru"
+        },
+        {
+            "DoctorID": "1",
+            "HospitalID": "1",
+            "DoctorName": "Dr. Vandana Hegde",
+            "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+            "SpecializationID": "7",
+            "HospitalName": "Manipal Hospitals Sarjapur, Bengaluru",
+            "SpecializationName": "Gynecologist",
+            "Designation": "MBBS",
+            "Fees": 800,
+            "Experiment": "15",
+            "TotalRatings": 90,
+            "Ratings": 4,
+            "Address": "Sarjapur, Bengaluru"
+        },
+        {
+            "DoctorID": "1",
+            "HospitalID": "1",
+            "DoctorName": "Dr. Vandana Hegde",
+            "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+            "SpecializationID": "7",
+            "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+            "SpecializationName": "Gynecologist",
+            "Designation": "MBBS",
+            "Education": "Diploma in Cardiology",
+            "Fees": 500,
+            "Experiment": "15",
+            "Address": "Prestige Shanthinikethan, Whitefield, Bengaluru",
+            "TotalRatings": 80,
+            "Ratings": 5,
+            "IsOnlineConsultant": true
+        }
+    ],
+    "Hospitals": [
+        {
+            "HospitalID": "1",
+            "HospitalName": "Manipal Hospitals",
+            "HospitalType": "1",
+            "HospitalAddess": "Yeshwanthpur, Bengaluru",
+            "latitude": "14.16666",
+            "longitude": "75.3333",
+            "Specilization": [
+                "Disk slip",
+                "Wrist problems",
+                "Meniscus Injury"
+            ],
+            "OperatingTimings": {
+                "StartTIme": "10AM",
+                "ClosingTime": "6PM",
+                "OperatingDays": [
+                    "Mon", "Tues"
+                ]
+            },
+            "HospitalImage": "https://cdn2.vectorstock.com/i/1000x1000/41/31/medical-center-vector-8414131.jpg",
+            "Doctors": [
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                },
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                },
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                }
+            ],
+            "Ratings": 5,
+            "TotalRatings": 100,
+            "Fees": 600
+        },
+        {
+            "HospitalID": "1",
+            "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+            "HospitalType": "1",
+            "HospitalAddess": "Some Address in Some City",
+            "latitude": "14.16666",
+            "longitude": "75.3333",
+            "HospitalImage": "https://cdn2.vectorstock.com/i/1000x1000/41/31/medical-center-vector-8414131.jpg",
+            "Specilization": [
+                "Disk slip",
+                "Wrist problems",
+                "Meniscus Injury",
+                "ACL Reconstruction",
+                "Rotator Cuff Injury Treatment",
+                "Ligament Reconstruction",
+                "Arthroscopy",
+                "Cartilage Surgery",
+                "Cruciate Ligament Reconstruction",
+                "Physiotherapy for Sports Injury Rehabilitation"
+            ],
+            "OperatingTimings": {
+                "StartTIme": "10AM",
+                "ClosingTime": "6PM",
+                "OperatingDays": [
+                    "Mon", "Tues"
+                ]
+            },
+            "Doctors": [
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                },
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                },
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                }
+            ],
+            "Ratings": 5,
+            "TotalRatings": 100,
+            "Fees": 800
+        },
+        {
+            "HospitalID": "1",
+            "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+            "HospitalType": "1",
+            "HospitalAddess": "Address in Some City",
+            "latitude": "14.16666",
+            "longitude": "75.3333",
+            "HospitalImage": "https://cdn2.vectorstock.com/i/1000x1000/41/31/medical-center-vector-8414131.jpg",
+            "Specilization": [
+                "Disk slip",
+                "Wrist problems",
+                "Meniscus Injury",
+                "ACL Reconstruction",
+                "Rotator Cuff Injury Treatment",
+                "Ligament Reconstruction",
+                "Arthroscopy",
+                "Cartilage Surgery",
+                "Cruciate Ligament Reconstruction",
+                "Physiotherapy for Sports Injury Rehabilitation"
+            ],
+            "OperatingTimings": {
+                "StartTIme": "10AM",
+                "ClosingTime": "6PM",
+                "OperatingDays": [
+                    "Mon", "Tues"
+                ]
+            },
+            "Doctors": [
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                },
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                },
+                {
+                    "DoctorID": "1",
+                    "HospitalID": "1",
+                    "DoctorName": "Dr. Vandana Hegde",
+                    "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+                    "SpecializationID": "7",
+                    "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+                    "SpecializationName": "Gynecologist"
+                }
+            ],
+            "Ratings": 5,
+            "TotalRatings": 100,
+            "Fees": 900
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+
+<div class="page-headers">
+    <div class="report">
+        <p>Report :</p>
+    </div>
+    <div class="back">
+        <p>Back</p>
+    </div>
+</div>
+
+<div class="report-history">
+    <div class="popular-labs-card" *ngFor="let a of [1,2]">
+        <div class="report-card">
+            <mat-card class="card-content">
+                <div class="card-header">
+                    <mat-card-header>
+                        <mat-card-title class="lab-title">Aarthi Scans & Labs</mat-card-title>
+                        <mat-card-subtitle>Multi-specialty Clinic</mat-card-subtitle>
+                    </mat-card-header>
+                    <div class="card-coontent">
+                        <mat-card-content>
+                            <p>Test Done (2)</p>
+
+                            <div class="test-list">
+                                <img src="../../../assets/icons/tick-mark.svg" alt="">
+                                <span>Mri Brain with Cisternography</span>
+                            </div>
+                            <div class="test-list">
+                                <img src="../../../assets/icons/tick-mark.svg" alt="">
+                                <span>X-Ray Both Wrist Lat View</span>
+                            </div>
+                               
+                            
+                        </mat-card-content>
+                    </div>
+                </div>
+
+                <div class="card-action">
+                    <div class="bill-amount">
+                        <p class="bill">Total Amount to be paid : </p>
+                        <p class="price">Rs. 300/-</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button mat-raised-button color="accent">
+                            Rebook a slot
+                            <p class="button-text">To collect samples from home</p>
+                        </button>
+                        <button mat-raised-button color="primary">
+                            Rebook a visit
+                            <p class="button-text">To the clinic</p>
+                        </button>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+
+        <div class="download-option">
+            <p class="download"><a href="/">Download Reports</a></p>
+        </div>
+    </div>
+</div>

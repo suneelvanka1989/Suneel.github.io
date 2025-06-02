@@ -1,0 +1,121 @@
+{
+  "Doctors": [
+    {
+      "DoctorID": "1",
+      "HospitalID": "1",
+      "DoctorName": "Dr. Vandana Hegde",
+      "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+      "SpecializationID": "7",
+      "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru",
+      "SpecializationName": "Gynecologist"
+    },
+    {
+      "DoctorID": "2",
+      "HospitalID": "2",
+      "DoctorName": "Dr. Chaitanya Kumar Reddy",
+      "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+      "SpecializationID": "1",
+      "HospitalName": "HOSMAT Hospital, Bengaluru",
+      "SpecializationName": "Dentist"
+    },
+    {
+        "DoctorID": "3",
+        "HospitalID": "3",
+        "DoctorName": "Dr. Soumya Podduturi",
+        "DoctorImage": "https://imagesx.practo.com/providers/dr-vandana-hegde-gynecologist-hyderabad-e40bc12f-a18e-4c41-a410-8ba9cb0d7d97.jpg",
+        "SpecializationID": "3",
+        "HospitalName": "Motherhood Hospital, Bengaluru",
+        "SpecializationName": "Dermatologist"
+      }
+  ],
+  "Specializations": [
+    {
+        "SpecializationID": "1",
+        "SpecializationName": "Dentist"
+    },
+    {
+        "SpecializationID": "2",
+        "SpecializationName": "Cardiologist"
+    },
+    {
+        "SpecializationID": "3",
+        "SpecializationName": "Dermatologist"
+    },
+    {
+        "SpecializationID": "4",
+        "SpecializationName": "Pediatrician"
+    },
+    {
+        "SpecializationID": "5",
+        "SpecializationName": "Orthopedic Surgeon"
+    },
+    {
+        "SpecializationID": "6",
+        "SpecializationName": "Neurologist"
+    },
+    {
+        "SpecializationID": "7",
+        "SpecializationName": "Gynecologist"
+    },
+    {
+        "SpecializationID": "8",
+        "SpecializationName": "Oncologist"
+    }
+  ],
+  "Hospitals": [
+    {
+        "HospitalID": "1",
+        "HospitalName": "Manipal Hospitals Yeshwanthpur, Bengaluru"
+    },
+    {
+        "HospitalID": "2",
+        "HospitalName": "HOSMAT Hospital, Bengaluru"
+    },
+    {
+        "HospitalID": "3",
+        "HospitalName": "Motherhood Hospital, Bengaluru"
+    },
+    {
+        "HospitalID": "4",
+        "HospitalName": "Santosh Hospital, Bengaluru"
+    }
+  ],
+  "Diseases": [
+    {
+        "DiseaseID":"1",
+        "Diseasedescription":"Heart Disease",
+        "SpecializationID": "1",
+        "SpecializationName": "Cardiologist"
+    },
+    {
+        "DiseaseID":"2",
+        "Diseasedescription":"Hypertension",
+        "SpecializationID": "1",
+        "SpecializationName": "Cardiologist"
+    },
+    {
+        "DiseaseID":"3",
+        "Diseasedescription":"Skin Conditions",
+        "SpecializationID": "3",
+        "SpecializationName": "Dermatologist"
+    },
+    {
+        "DiseaseID":"4",
+        "Diseasedescription":"Acne",
+        "SpecializationID": "3",
+        "SpecializationName": "Dermatologist"
+    },
+    {
+        "DiseaseID":"5",
+        "Diseasedescription":"Asthma",
+        "SpecializationID": "6",
+        "SpecializationName": "Neurologist"
+    },
+    {
+        "DiseaseID":"6",
+        "Diseasedescription":"Diabetes",
+        "SpecializationID": "1",
+        "SpecializationName": "Cardiologist"
+    }
+  ]
+}

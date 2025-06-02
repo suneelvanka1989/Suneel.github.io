@@ -1,0 +1,895 @@
+<p class="page-title">Health Checkup Packages</p>
+
+
+<div class="health-packages">
+    <div class="filter-section">
+        <mat-card class="filter-section-card">
+            <mat-card-content>
+                <mat-card-title>Filters</mat-card-title>
+                <hr> 
+                <section class="filter-by-discount">
+                    <label>Discount</label>
+                    <mat-radio-group [(ngModel)]="discount">
+                        <p><mat-checkbox formControlName="">Less than 10%</mat-checkbox></p>
+                        <p><mat-checkbox formControlName="">10% and above</mat-checkbox></p>
+                        <p><mat-checkbox formControlName="">20% and above</mat-checkbox></p>
+                        <p><mat-checkbox formControlName="">30% and above</mat-checkbox></p>
+                        <p><mat-checkbox formControlName="">40% and above</mat-checkbox></p>
+                    </mat-radio-group>
+                </section>
+
+            </mat-card-content>
+
+            <mat-card-content>
+                <section class="filter-by-gender">
+                    <label class="example-margin">Gender:</label>
+                    <mat-radio-group [(ngModel)]="gender">
+                        <p><mat-checkbox formControlName="">Male</mat-checkbox></p>
+                        <p><mat-checkbox formControlName="">Female</mat-checkbox></p>
+                    </mat-radio-group>
+                </section>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+ 
+    <div class="discount-coupon-section">
+        <div class="coupons-list" >
+          <div class="discount-coupons">
+
+
+            <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+
+
+              <mat-card class="coupon-card">
+                <mat-card-header class="card-lab-name">
+                  <div class="card-header">
+                    <div class="c-header">
+                      <p class="card-title">Mri Brain with Cisternography</p>
+                    </div>
+                    <div class="discount">
+                      <p class="percentage">50% Off</p>
+                    </div>
+                  </div>
+          
+                </mat-card-header>
+                <p class="service-type">Home Service available</p>
+          
+                <mat-card-content class="note-content">
+                  <span class="note list-content">Note :</span>
+                  <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                  </li>
+                </mat-card-content>
+                <mat-card-content>
+                  <div class="rates">
+                    <p class="discount-rate">200/-</p>
+                <p class="original-price"><s>500/-</s></p>
+                  </div>
+                </mat-card-content>
+          
+          
+                <!-- <div class="add-cart-button">
+                      <mat-card-actions>
+                        <button mat-raised-button color="accent">ADD TO CART</button>
+                      </mat-card-actions>
+                    </div> -->
+          
+                <div class="outerdiv add-cart-button">
+                  <mat-card-actions>
+                    <button mat-raised-button color="accent" class="mybuttonoverlap btn btn-info">ADD TO CART</button>
+                  </mat-card-actions>
+                </div>
+              </mat-card>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Make it visible only in Mobile View -->
+<!-- <div class="right-side-nav w-95" fxHide.gt-xs>
+  <mat-card class="assistance-card">
+    <div class="result-need-assistance">
+      <div class="form-header">
+        <h3 class="form-header text-roboto">Need More Assistance</h3>
+        <p class="text-roboto">Drop a reques for an enquiry</p>
+      </div>
+      <div class="form-container">
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>First Name</mat-label>
+          <input matInput type="search" placeholder="First Name" class="input-field"/>
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Last Name</mat-label>
+          <input matInput type="search" placeholder="Last Name" class="input-field"/>
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Contact</mat-label>
+          <input matInput type="search" placeholder="Contact" class="input-field"/>
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline" class="form-field email-field">
+          <mat-label>Email</mat-label>
+          <input matInput type="search" placeholder="Email" class="input-field"/>
+        </mat-form-field>
+        
+      </div>
+      <div class="text-center">
+        <button mat-raised-button color="primary">Submit</button>
+      </div>
+    </div>
+  </mat-card>
+  
+</div> -->

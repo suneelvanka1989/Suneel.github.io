@@ -1,0 +1,254 @@
+ .page-title {
+   color: #000;
+   font-family: Poppins;
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+
+   @media (max-width: 600px) {
+     display: none;
+   }
+
+ }
+
+
+
+ .health-packages {
+   display: flex;
+   margin: 20px;
+
+ }
+
+
+
+
+
+
+
+ .filter-section {
+   display: flex;
+   /* flex-direction: row; */
+   justify-content: center;
+   width: 250px;
+
+   .filter-section-card {
+     height: 500px;
+     width: 250px;
+   }
+
+   @media (max-width: 600px) {
+     display: none;
+   }
+
+ }
+
+ .discount-coupon-section {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+
+ .card-lab-name{
+  padding: 6px 6px 0px;
+ }
+
+ .discount-coupons {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 100%;
+   gap: 10px;
+   margin: 0px 20px 20px 20px;
+
+   .coupon-card {
+     width: 225px;
+     height: 208px;
+
+     .card-header {
+       display: flex;
+     }
+
+     .discount {
+       border: 1px dashed #75A634;
+       background: rgba(140, 198, 62, 0.20);
+       width: 65px;
+       height: 20px;
+       //margin-left: 12px;
+     }
+   }
+
+ }
+
+
+ .card-title {
+   color: #000;
+   font-family: Poppins;
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+ }
+
+ .service-type {
+   color: #0076D7;
+   font-size: 12px;
+   font-weight: 500;
+   padding-left: 15px;
+ }
+
+ .note {
+   color: #75A634;
+   font-size: 12px;
+ }
+
+ .note-description {
+   font-size: 10px;
+ }
+
+ .rates {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 10px 20px;
+
+   p {
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+   }
+
+   .discount-rate {
+     color: rgba(255, 0, 0, 1);
+     font-size: 18px;
+   }
+
+   .original-rate {
+     color: rgba(109, 108, 108, 0.6);
+     font-size: 15px;
+   }
+ }
+
+ .mat-typography p {
+   margin: 0 0 8px !important;
+ }
+
+ .percentage {
+   color: #75A634;
+   font-size: 10px;
+   font-style: normal;
+   font-weight: 600;
+   text-align: center;
+ }
+
+ .add-cart-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ // hover button styling
+
+ .outerdiv {
+   position: relative;
+   width: 75%;
+   top: -60px;
+   left: 25px;
+   height: 60px;
+ }
+
+ .mydivoverlap {
+   position: relative;
+   z-index: 1;
+ }
+
+ .mybuttonoverlap {
+   position: absolute;
+   z-index: 2;
+   display: none;
+   left: 14px;
+   width: 150px;
+   height: 80% !important;
+   background-color: rgba(161, 206, 65, 1);
+ }
+
+ .hover-button {
+   min-height: 40px !important;
+ }
+
+ .outerdiv:hover .mybuttonoverlap {
+   display: block;
+ }
+
+ .overlap-action-button {}
+
+ // form
+
+ //  .right-side-nav {
+ //    display: flex;
+ //    margin: 10px;
+ //    height: 250px;
+ //  }
+
+ //  .assistance-card {
+ //    background-color: (232, 232, 232, 0.5) !important;
+ //    box-shadow: 4px 4px 4px 4px rgba(170, 170, 170, 1) !important;
+ //    height: 230px;
+ //  }
+
+ //  .result-need-assistance {
+ //    margin: 10px;
+ //  }
+
+ //  .form-header {
+ //    display: flex;
+ //    flex-direction: column;
+ //    justify-content: center;
+ //    align-items: center;
+ //  }
+
+
+
+ //  .form-field {
+ //    .mat-mdc-form-field-subscript-wrapper {
+ //      display: none !important;
+ //    }
+
+ //    .mat-mdc-text-field-wrapper {
+ //      height: 40px;
+ //      width: 110px;
+ //    }
+
+ //    .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+ //      top: 23px !important;
+ //    }
+
+ //    .mat-mdc-form-field-flex {
+ //      height: 40px;
+ //    }
+
+ //    .input-field {
+ //      position: relative !important;
+ //      top: -10px !important;
+ //    }
+
+
+ //  }
+
+ //  .email-field {
+ //    .mat-mdc-text-field-wrapper {
+ //      width: 200px !important;
+ //    }
+ //  }
+
+ //  .text-center {
+ //    margin: 15px;
+ //  }
+
+ //  .note-content {
+ //    margin: 0px 10px;
+
+ //  }

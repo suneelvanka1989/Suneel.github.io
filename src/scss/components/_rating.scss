@@ -1,0 +1,49 @@
+.rating-band {
+  display: flex;
+  align-items: center;
+  .rate-badge {
+    background: #ff8b03;
+    color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 3px 6px;
+    mat-icon {
+      @media (max-width: 600px) {
+        height: 18px;
+        width: 18px;
+        font-size: 18px;
+      }
+    }
+  }
+  .rating-number {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+  .rating-stars {
+    mat-icon {
+      color: #ff8b03;
+      @media (max-width: 600px) {
+        height: 18px;
+        width: 18px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.review-actions {
+  @media (max-width: 600px) {
+    .mdc-button__label {
+      font-size: 0.65rem;
+    }
+  }
+}

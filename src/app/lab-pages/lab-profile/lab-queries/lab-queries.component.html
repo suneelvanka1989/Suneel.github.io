@@ -1,0 +1,67 @@
+<div class="d-profile-queries">
+  <div class="pt-20">
+    <p class="text-center d-paragraph-medium">
+      Ask any healthcare related questions and get clear resolutions.
+    </p>
+  </div>
+  <hr class="hr-light" />
+
+  <div class="d-profile-query" fxLayout="row">
+    <i class="fa-solid fa-circle-user"></i>
+    <div class="form-container">
+      <mat-form-field class="d-location d-custom-input-text d-input-text">
+        <!-- <mat-icon matPrefix>search</mat-icon> -->
+        <input type="text" placeholder="Enter Location" aria-label="Number" matInput />
+      </mat-form-field>
+    </div>
+  </div>
+  <p class="text-center">
+    <button mat-flat-button color="primary">Book Consulation</button>
+  </p>
+  <hr class="hr-light" />
+
+  <div class="media media-container" *ngFor="let info of [1, 2, 3]">
+    <a href="#">
+      <img class="mr-3" data-src="holder.js/64x64" alt="64x64"
+        src="../../../assets/icons/lab-profile/profile-icon.svg"
+        data-holder-rendered="true" style="width: 64px; height: 64px" /></a>
+    <div class="media-body">
+      <div fxLayout="row d-m-column">
+        <div>
+          <a href="#">
+            <h5 class="mb-0">Media Heading</h5>
+          </a>
+          <small class="mb-5 d-block">(Male) (35) (Bangalore)</small>
+          <p>
+            Have shooting pain in the back of my knee. However there is no swelling. What should I do to reduce the
+            pain?
+          </p>
+        </div>
+        <div class="nowrap mb-20">15 July 2023</div>
+      </div>
+
+      <div class="media mt-3">
+        <a href="#">
+          <img data-src="holder.js/64x64" alt="64x64"
+            src="../../../assets/icons/lab-profile/profile-icon.svg"
+            data-holder-rendered="true" />
+        </a>
+        <div class="media-body">
+          <div fxLayout="row d-m-column">
+            <div>
+              <a href="#">
+                <h5 class="mb-0">Media Heading</h5>
+              </a>
+              <small class="mb-5 d-block">(Male) (35) (Bangalore)</small>
+              <p>
+                Hello, Shooting pain at the back of the knee may be arising from the spine. You can first of all take rest and can take some analgesic (pain-killer) along with a muscle relaxant.
+              </p>
+            </div>
+            <div class="nowrap">15 August 2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Media -->
+</div>

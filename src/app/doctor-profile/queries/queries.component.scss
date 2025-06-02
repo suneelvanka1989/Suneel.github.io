@@ -1,0 +1,17 @@
+.d-profile-queries {
+  i {
+    font-size: 1.25rem;
+    color: blue;
+  }
+  .fa-circle-user {
+    font-size: 3.438rem;
+    margin-right: 20px;
+  }
+  .d-profile-query {
+    padding-top: 20px;
+    .form-container, .d-custom-input-text {
+      flex-grow: 1;
+      display: flex;
+    }
+  }
+}

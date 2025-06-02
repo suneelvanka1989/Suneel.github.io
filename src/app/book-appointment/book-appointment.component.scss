@@ -1,0 +1,76 @@
+@import "../../scss/colors";
+.d-appointment-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .mat-mdc-card-header {
+    padding-bottom: 16px;
+  }
+  .d-profile-card {
+    border: 1px solid #dfdfdf;
+  }
+}
+
+.d-appointment-container {
+  grid-template-areas:
+    "profile profile profile similarProfile";
+  gap: 20px;
+
+  @media (max-width: 960px) {
+    grid-template-areas:
+    "profile profile profile profile"
+    "similarProfile similarProfile similarProfile similarProfile";
+  }
+  .profile {
+    grid-area: profile;
+  }
+  .similarProfile {
+    grid-area: similarProfile;
+  }
+  .selection-wrapper {
+    display: flex;
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
+    .d-periods {
+      flex-grow: 3;
+      @media (max-width: 960px) {
+        flex-grow: 1;
+        order: 2;
+      }
+    }
+    .demo-inline-calendar-card {
+      flex-grow: 2;
+      min-width: 200px;
+      @media (max-width: 960px) {
+        flex-grow: 1;
+        order: 1;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.similarProfile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+  .mdc-card {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    line-height: 18px;
+    background-color: rgba(170, 170, 170, 0.09);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    h4 {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    figure {
+      text-align: center;
+      img{
+        border-radius: 50%;
+      }
+    }
+  }
+}

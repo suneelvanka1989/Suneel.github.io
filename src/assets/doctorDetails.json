@@ -1,0 +1,255 @@
+{
+    "DoctorDetails": {
+        "Info": {
+            "AboutMe": "As an orthopedic doctor, I am dedicated to diagnosing, treating, and preventing conditions that affect the musculoskeletal system, which includes bones, joints, ligaments, tendons, and muscles. With a keen eye for detail and an analytical approach, I strive to accurately diagnose the root cause of each patient's condition. This allows me to develop personalized treatment plans that may include nonsurgical interventions such as physical therapy, medication, or injections. When necessary, I am also skilled in performing various surgical procedures, employing state-of-the-art techniques to optimize outcomes and minimize recovery time.",
+            "AcaadmicQualification": [
+                {
+                    "University": "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
+                    "PassoutYear": "2004",
+                    "IsPersuing": false
+                },
+                {
+                    "University": "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
+                    "PassoutYear": "2004",
+                    "IsPersuing": false
+                },
+                {
+                    "University": "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
+                    "PassoutYear": "2004",
+                    "IsPersuing": false
+                },
+                {
+                    "University": "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
+                    "PassoutYear": "2004",
+                    "IsPersuing": false
+                }
+            ],
+            "ServicesProvided": [
+                "Disk slip",
+                "Wrist problems",
+                "Meniscus Injury",
+                "ACL Reconstruction",
+                "Rotator Cuff Injury Treatment",
+                "Ligament Reconstruction",
+                "Arthroscopy",
+                "Cartilage Surgery",
+                "Cruciate Ligament Reconstruction",
+                "Physiotherapy for Sports Injury Rehabilitation"
+            ],
+            "ProfessionalExperience": [
+                {
+                    "Hospital": "B.J. Medical College and Sassoon General Hospital",
+                    "Designation": "Rotatory Intern",
+                    "StartDate": "2010",
+                    "EndDate": "2013"
+                },
+                {
+                    "Hospital": "B.J. Medical College and Sassoon General Hospital",
+                    "Designation": "Rotatory Intern",
+                    "StartDate": "2010",
+                    "EndDate": "2013"
+                },
+                {
+                    "Hospital": "B.J. Medical College and Sassoon General Hospital",
+                    "Designation": "Rotatory Intern",
+                    "StartDate": "2010",
+                    "EndDate": "2013"
+                },
+                {
+                    "Hospital": "B.J. Medical College and Sassoon General Hospital",
+                    "Designation": "Rotatory Intern",
+                    "StartDate": "2010",
+                    "EndDate": "2013"
+                }
+            ],
+            "LanguagesKnown": [
+                "Kannada",
+                "English",
+                "Hindi"
+            ],
+            "Awards": [
+                {
+                    "AwardName": "Best Surgeon Award- Apollo Group",
+                    "Year": 2010
+                },
+                {
+                    "AwardName": "Best Surgeon Award- Apollo Group",
+                    "Year": 2010
+                },
+                {
+                    "AwardName": "Best Surgeon Award- Apollo Group",
+                    "Year": 2010
+                }
+            ],
+            "Membership": [
+                "Urological Society of India (USI)",
+                "Urological Society of India (USI)",
+                "Urological Society of India (USI)"
+            ]
+        },
+        "BookSlot" : {
+            "AvailableSlots": [
+                {
+                    "AvailableSlotID": 1,
+                    "HospitalName": "Tapadia Diagnostic Centre",
+                    "HospitalAddress": "Aurangabad Railway Station, Aurangabad",
+                    "latitude": "17,56463",
+                    "longitude": "75.3333",
+                    "Availability": [
+                        {
+                            "AvailabilityDay": "Thursday",
+                            "Fees": 300,
+                            "StartTime": "2PM",
+                            "EndTime": "7PM"
+                        },
+                        {
+                            "AvailabilityDay": "Friday",
+                            "Fees": 300,
+                            "StartTime": "4PM",
+                            "EndTime": "9PM"
+                        }
+                    ]
+                   
+                },
+                {
+                    "AvailableSlotID": 1,
+                    "HospitalName": "Tapadia Diagnostic Centre",
+                    "HospitalAddress": "Aurangabad Railway Station, Aurangabad",
+                    "latitude": "17,56463",
+                    "longitude": "75.3333",
+                    "Availability": [
+                        {
+                            "AvailabilityDay": "Thursday",
+                            "Fees": 300,
+                            "StartTime": "2PM",
+                            "EndTime": "7PM"
+                        },
+                        {
+                            "AvailabilityDay": "Friday",
+                            "Fees": 300,
+                            "StartTime": "4PM",
+                            "EndTime": "9PM"
+                        }
+                    ]
+                   
+                },
+                {
+                    "AvailableSlotID": 1,
+                    "HospitalName": "Tapadia Diagnostic Centre",
+                    "HospitalAddress": "Aurangabad Railway Station, Aurangabad",
+                    "latitude": "17,56463",
+                    "longitude": "75.3333",
+                    "Availability": [
+                        {
+                            "AvailabilityDay": "Thursday",
+                            "Fees": 300,
+                            "StartTime": "2PM",
+                            "EndTime": "7PM"
+                        },
+                        {
+                            "AvailabilityDay": "Friday",
+                            "Fees": 300,
+                            "StartTime": "4PM",
+                            "EndTime": "9PM"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Queries": [
+
+        ],
+        "Reviews": [
+            {
+                "UserId": 1,
+                "ImagePath": "",
+                "Review": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus",
+                "IsUseful": 100,
+                "Comments": [
+                    {
+                        "Comment": "Thank You for your feedback"
+                    },
+                    {
+                        "Comment":"Thank You for your feedback"
+                    },
+                    {
+                        "Comment": "Thank You for your feedback"
+                    }
+                ]
+            },
+            {
+                "UserId": 1,
+                "ImagePath": "",
+                "Review": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus",
+                "IsUseful": 100,
+                "Comments": [
+                    {
+                        "Comment": "Thank You for your feedback"
+                    },
+                    {
+                        "Comment":"Thank You for your feedback"
+                    },
+                    {
+                        "Comment": "Thank You for your feedback"
+                    }
+                ]
+            },
+            {
+                "UserId": 1,
+                "ImagePath": "",
+                "Review": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus",
+                "IsUseful": 100,
+                "Comments": [
+                    {
+                        "Comment": "Thank You for your feedback"
+                    },
+                    {
+                        "Comment":"Thank You for your feedback"
+                    },
+                    {
+                        "Comment": "Thank You for your feedback"
+                    }
+                ]
+            },
+            {
+                "UserId": 1,
+                "ImagePath": "",
+                "Review": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus",
+                "IsUseful": 100,
+                "Comments": [
+                    {
+                        "Comment": "Thank You for your feedback"
+                    },
+                    {
+                        "Comment":"Thank You for your feedback"
+                    },
+                    {
+                        "Comment": "Thank You for your feedback"
+                    }
+                ]
+            }
+        ],
+        "Gallery": [
+            {
+                "ImageName": "Image1",
+                "ImagePath": "https://images.example.com"
+            },
+            {
+                "ImageName": "Image2",
+                "ImagePath": "https://images.example.com"
+            },
+            {
+                "ImageName": "Image3",
+                "ImagePath": "https://images.example.com"
+            },
+            {
+                "ImageName": "Image4",
+                "ImagePath": "https://images.example.com"
+            },
+            {
+                "ImageName": "Image5",
+                "ImagePath": "https://images.example.com"
+            }
+        ]
+    }
+}

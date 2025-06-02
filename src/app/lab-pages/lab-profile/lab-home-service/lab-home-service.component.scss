@@ -1,0 +1,121 @@
+.lab-profile-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px 0px;
+
+    .profile-header {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.home-service-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-service-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-location-select {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.saved-address-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.saved-list {
+    border: 1px solid rgba(170, 170, 170, 1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.add-address {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px;
+    color: rgba(2, 123, 212, 1);
+}
+
+.over-lay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.content {
+    width: 475px;
+    height: 475px;
+    padding: 20px;
+}
+
+.address-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 10px 10px 20px;
+}
+
+.address-input{
+    width: 100%;
+}
+
+.input-address{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #0076D7;
+}
+
+.save-addres-button{
+    display: flex;
+    justify-content: center;
+}
+.address-save-button{
+    width: 200px;
+}
+
+.add-new-header{
+    margin: 10px 20px 0px;
+    .new-address-header{
+        font-size: 1.2rem;
+    }
+}
+
+.close-button {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+
+.close-icon{
+    color: black;
+}

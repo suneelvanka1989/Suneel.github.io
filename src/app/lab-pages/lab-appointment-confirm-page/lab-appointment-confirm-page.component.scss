@@ -1,0 +1,591 @@
+.page-title {
+    margin: 20px 0px 20px 10px;
+}
+
+.confirmation-title {
+    color: rgba(0, 118, 215, 1);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+.page-sub-title {
+    color: #6D6C6C;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lab-title {
+    color: rgba(0, 118, 215, 1);
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.side-title {
+    color: rgba(0, 118, 215, 1);
+}
+
+.test-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width:600px) {
+        width: 100%;
+    }
+}
+
+.appointment-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 100px;
+
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+    @media (max-width: 900px) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 10px;
+    }
+}
+
+.profile-lab {
+    margin: 10px;
+    width: 35%;
+
+    @media (max-width:600px) {
+        width: 100%;
+    }
+
+    @media (max-width:900px) {
+        width: 50%;
+    }
+
+    .address-lab {
+        width: 75%;
+
+        @media (max-width:900px) {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.details-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.patient-profile,
+.doctor-profile {
+    .dr-details {
+        width: 300px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #c5c3c3;
+        border-radius: 10px;
+        margin: 20px;
+
+        .dr-title {
+            display: flex;
+            width: 49px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(66, 82, 110, 0.25);
+            border-radius: 8px 0px 0px 8px;
+        }
+    }
+}
+
+.patient-profile {
+    height: 200px;
+    width: 360px;
+}
+
+.doctor-profile {
+    width: 100%;
+    height: 150px;
+}
+
+.mat-mdc-button .mdc-button__label {
+    z-index: 0;
+}
+
+.patient-card-title {
+    height: 35px;
+    padding: 15px 0px 0px 15px;
+}
+
+.patient-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.edit-button {
+    color: #75A634 !important;
+    border: 1px solid #75A634;
+    border-radius: 30px;
+}
+
+.add-patient-button,
+.add-more-button {
+    color: #0076D7 !important;
+    border: 1px #0076D7 solid !important;
+    border-radius: 25px;
+    margin-left: 350px;
+
+    @media (max-width:600px) {
+        margin-left: 50px;
+    }
+
+    @media (max-width:900px) {
+        margin-left: 100px;
+    }
+}
+
+.add-patient-button {
+    margin: 5px 75px 5px 75px;
+}
+
+
+
+.test-details {
+    @media (max-width:600px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media (max-width:900px) {
+        width: 100%;
+    }
+}
+
+.test-list {
+    width: 750px;
+    gap: 8px;
+
+    @media (max-width:600px) {
+        width: 100%;
+    }
+
+    @media (max-width:900px) {
+        width: 100%;
+    }
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .remove-button {
+        padding-top: 16px;
+
+
+        .remove {
+            height: 25px;
+            border: 1px rgba(255, 0, 0, 1) solid !important;
+            border-radius: 30px !important;
+        }
+    }
+
+    .remove:active {
+        background-color: rgba(255, 0, 0, 1);
+    }
+
+
+    .mat-mdc-card-header {
+        display: flex;
+        padding: 16px 4px 0px;
+    }
+}
+
+.d-header {
+    height: 50px;
+}
+
+.add-more {
+    height: 25px !important;
+    color: rgba(0, 118, 215, 1) !important;
+}
+
+.button-span-color {
+    color: rgba(255, 0, 0, 1) !important;
+}
+
+
+
+.total-bill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10px;
+}
+
+.card-title {
+    margin: 10px 10px 10px 10px;
+}
+
+.p-title,
+.t-text {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2px !important;
+}
+
+.s-title {
+    font-size: 0.7rem;
+}
+
+.test-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-title {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.note {
+    color: #75A634;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line {
+    margin: 0px 20px 0px 20px;
+    border: 1px solid #e1e0e0;
+}
+
+.confirm-slot-button {
+    width: 250px;
+}
+
+// add-patient pop up
+
+.over-lay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 475px;
+    height: 475px;
+    padding: 20px;
+
+    .popup-card-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .close {
+        height: 20px;
+        width: 20px;
+        font-size: 25px;
+        color: rgba(255, 0, 0, 1);
+        position: relative;
+        top: -20px;
+        left: -10px;
+    }
+
+    .dob-fields {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        gap: 15px;
+
+        .dob-input {
+            width: 180px;
+            border: none;
+        }
+
+        .date-birth-picker {
+            display: flex;
+            border: 1px solid rgba(170, 170, 170, 0.25);
+            border-radius: 10px;
+            // margin: 20px 0px;
+
+            .mat-datepicker-toggle-default-icon {
+                color: #000;
+            }
+
+        }
+
+        .age-in-years {
+            height: 45px;
+            width: 130px;
+            border: 1px solid rgba(170, 170, 170, 0.25);
+            border-radius: 10px;
+        }
+    }
+}
+
+.patient-name-field {
+    margin: 10px;
+
+    .patient-name-input {
+        border: 1px solid rgba(170, 170, 170, 0.25);
+        border-radius: 10px;
+        height: 50px;
+        width: 95%;
+        margin-bottom: 20px
+    }
+}
+
+.gender-selector {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.genders {
+
+
+    .gender-button {
+        border-radius: 0px !important;
+        margin: 0px;
+        width: 133px;
+        height: 45px;
+        border: 2px solid rgba(170, 170, 170, 0.25);
+    }
+
+    .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary {
+        width: 100% !important;
+        padding-left: 0;
+        padding-right: 0px !important;
+    }
+
+
+    .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic {
+        display: none;
+    }
+}
+
+
+.save-button {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+    .button-span-color {
+        border: 1px solid rgba(255, 0, 0, 1);
+        border-radius: 10px;
+    }
+}
+
+
+.day-slots-cursol {
+    position: relative;
+    z-index: 0;
+
+    .week-days {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mat-mdc-button .mdc-button__label {
+    z-index: 0 !important;
+}
+
+// chang clinic options
+
+.over-lay,
+.popup-more-labs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 70, 70, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-list {
+    ul {
+        li {
+            list-style: disc;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+.save-button {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+    .button-span-color {
+        border: 1px solid rgba(255, 0, 0, 1);
+        border-radius: 10px;
+    }
+}
+
+
+
+.address-lable {
+    color: #0076D7;
+}
+
+.address {
+    font-size: 0.9rem;
+}
+
+.more-labs-list {
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+}
+
+.more-labs-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.branch-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(232, 232, 232, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.lab-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(1, 78, 134, 1);
+}
+
+.day-slots-cursol {
+    .mat-mdc-button .mdc-button__label {
+        z-index: 0 !important;
+    }
+}
+
+.more-lab-title {
+    p {
+        margin: 0px 0px 0px !important;
+    }
+
+}
+
+.close-button {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+
+.close-icon {
+    color: rgba(255, 0, 0, 1);
+}
+
+
+// popup-more-tests 
+
+.popup-more-tests {
+    .card-more-test {
+        height: 450px;
+        width: 800px;
+    }
+
+    .test-names {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mdc-label {
+        display: flex;
+        width: 700px;
+        justify-content: space-between;
+
+    }
+
+    .test-save-button {
+        display: flex;
+        justify-content: center;
+
+        .save-button {
+            width: 200px;
+        }
+    }
+}
+
+.search-more-tests {
+    display: flex;
+    justify-content: space-around;
+    .search-test {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        .mat-mdc-text-field-wrapper .mdc-text-field .mdc-text-field--filled .mdc-text-field--no-label{
+            border: 2px solid lightgrey !important;
+            border-radius: 40px !important;
+        }
+        .search-input{
+            width: 100%;
+            height: 40px;
+            border: none;
+        }
+    }
+}

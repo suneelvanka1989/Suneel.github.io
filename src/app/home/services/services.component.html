@@ -1,0 +1,201 @@
+<div class="landing-service-types">
+  <div fxLayout="row" class="d-service-type">
+    <div class="d-home-type-img" fxHide.lt-sm>
+      <img src="../../assets/img/services/care.svg" alt="DocPhine Care" />
+    </div>
+    <div class="d-service-box-desc">
+      <h3>Get Quality Care That Treats Everyone</h3>
+      <div fxHide.gt-xs class="d-home-type-m-img">
+        <img src="../../assets/img/services/care.svg" alt="DocPhine Care" />
+      </div>
+      <p class="d-paragraph-lead">
+        We provide expert supervision when you need it. Get an expert advice on
+        all your issues and premium quality healthcare tips.
+      </p>
+      <div>
+        <button mat-flat-button color="primary" class="btn-lg">
+          Book Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Flex layout 2 -->
+  <div fxLayout="row" class="d-service-type">
+    <div class="d-service-box-desc">
+      <h3>Can't Visit Clinic? Consult Online and get a Complete Solution.</h3>
+      <div fxHide.gt-xs class="d-home-type-m-img">
+        <img src="../../assets/img/services/clinic.svg" alt="DocPhone Clinic" />
+      </div>
+      <p class="d-paragraph-lead">
+        Get an opportunity to discuss without visiting to the clinic. We create
+        a room for you and your required professionals. Book your slot today.
+      </p>
+      <div>
+        <button mat-flat-button color="primary" class="btn-lg">
+          Book Online
+        </button>
+      </div>
+    </div>
+    <div class="d-home-type-img" fxHide.lt-sm>
+      <img src="../../assets/img/services/clinic.svg" alt="Image" />
+    </div>
+  </div>
+
+  <!-- Flex Layout 3 -->
+  <div fxLayout="row" class="d-service-type">
+    <div class="d-home-type-img" fxHide.lt-sm>
+      <img
+        src="../../assets/img/services/medicine.svg"
+        alt="DocPhine Medicine"
+      />
+    </div>
+    <div class="d-service-box-desc">
+      <h3>Get all your pres-scripted medicines at one place.</h3>
+      <div fxHide.gt-xs class="d-home-type-m-img">
+        <img
+          src="../../assets/img/services/medicine.svg"
+          alt="DocPhine Medicine"
+        />
+      </div>
+      <p class="d-paragraph-lead">
+        Place order for your required medicines and get certified and trusted on
+        time delivery.
+      </p>
+      <div>
+        <button mat-flat-button color="primary" class="btn-lg">
+          View Page
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flex Layout 4 -->
+  <div fxLayout="row" class="d-service-type">
+    <div class="d-service-box-desc">
+      <h3>Book a slot for an assured lab tests for any health concern</h3>
+      <div fxHide.gt-xs class="d-home-type-m-img">
+        <img src="../../assets/img/services/bookslot.svg" alt="Image" />
+      </div>
+      <p class="d-paragraph-lead">Get an assured test results for your health checkup.</p>
+      <div>
+        <button mat-flat-button color="primary" class="btn-lg">
+          Book Slot
+        </button>
+      </div>
+    </div>
+    <div class="d-home-type-img" fxHide.lt-sm>
+      <img src="../../assets/img/services/bookslot.svg" alt="Image" />
+    </div>
+  </div>
+  <!-- End Flex Layout 4 -->
+
+  <!-- Flex Layout 5 -->
+  <div fxLayout="row" class="d-service-type">
+    <div class="d-home-type-img" fxHide.lt-sm>
+      <img src="../../assets/img/services/expert.svg" alt="Image" />
+    </div>
+    <div class="d-service-box-desc">
+      <h3>Expert care from Start to Finish.</h3>
+      <div fxHide.gt-xs class="d-home-type-m-img">
+        <img src="../../assets/img/services/expert.svg" alt="Image" />
+      </div>
+      <p class="d-paragraph-lead">Get in touch with our top surgeons to book your appointment.</p>
+      <div>
+        <button mat-flat-button color="primary" class="btn-lg">
+          Book Consulation
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flex Layout 6 -->
+  <div fxLayout="row" class="d-service-type">
+    <div class="d-home-type-img" fxHide.lt-sm>
+      <img src="../../assets/img/services/consult.svg" alt="Image" />
+    </div>
+    <div class="d-service-box-desc">
+      <h3>Consult Now in Your City</h3>
+      <div fxHide.gt-xs class="d-home-type-m-img">
+        <img src="../../assets/img/services/consult.svg" alt="Image" />
+      </div>
+      <div fxLayout="row" class="mat-body-1">
+        <div fxFlex="50%" fxLayout="column" fxLayoutGap="10px">
+          <span>Delhi</span>
+          <span>Mumbai</span>
+          <span>Bangalore</span>
+          <span>Hyderabad</span>
+          <span>Ahmedabad</span>
+          <span>Chennai</span>
+        </div>
+        <div fxFlex="50%" fxLayout="column" fxLayoutGap="10px">
+          <span>Goa</span>
+          <span>Kolkata</span>
+          <span>Lucknow</span>
+          <span>Bhubaneshwar</span>
+          <span>Thiruvananthapuram</span>
+          <span>Vishakhapatnam</span>
+        </div>
+      </div>
+      <div>
+        <button mat-flat-button color="primary">
+          For More <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="d-service-type border-0 mb-0 text-center border">
+    <div class="d-service-box-desc">
+      <h3 class="mb-0">7 Readable articles on health care</h3>
+      <p class="d-paragraph-lead">
+        Readable articles that will keep you aware about the useful facts on
+        health care.
+      </p>
+    </div>
+    <div class="articles">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/fooditems.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>Food Items That must be added in perfect meal</h3>
+        </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/dieting.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>Dieting is Not aSolution</h3>
+        </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/yoga.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>Unknown benefits of Yoga</h3>
+        </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/BP.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>How to keep your Blood  pressure in-line</h3>
+        </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/pregnancy.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>10 Things a Mother should know during pregnancy</h3>
+        </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/mind.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>Depression is not just a state of mind</h3>
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <img src="../../assets/img/services/osteo.jpg" alt="Image" />
+          <div class="carousel-caption">
+            <h3>What is Osteoporosis? Must read this Article</h3>
+        </div>
+        </ng-template>  
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>

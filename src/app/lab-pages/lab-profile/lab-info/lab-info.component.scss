@@ -1,0 +1,170 @@
+.lab-profile-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px 0px;
+
+    .profile-header {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.header {
+    margin: 20px 25px 25px 50px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.offer-display {
+
+    .offers-section {
+        display: flex;
+        gap: 30px;
+        width: 400px;
+    }
+
+}
+
+.offer-available {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+    border: 1px dashed;
+    border-radius: 5px;
+    gap: 15px;
+    padding: 10px;
+
+    .available-offer {
+        margin: 0px !important;
+        font-size: 0.9rem;
+    }
+}
+
+.direction-link {
+    color: #0076D7;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ph-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 50px;
+    }
+}
+
+.c-address {
+    font-size: 0.9rem;
+}
+
+// .location {
+//     padding: 0px 10px 10px 50px;
+// }
+
+.lable-color {
+    color: rgba(140, 198, 62, 1);
+}
+
+.center-timings {
+    border: none !important;
+}
+
+.branch-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fafafa;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+    gap: 25px;
+
+    @media (max-width:600px) {
+        padding: 0px;
+    }
+
+    .branch-details {
+        gap: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (max-width:600px) {
+            gap: 10px;
+        }
+    }
+
+    .branch-address {
+        width: 350px;
+        padding: 5px;
+    p{
+        span{
+            font-family: 'poppins';
+            font-size: 0.9rem;
+        }
+    }
+
+        @media (max-width:600px) {
+            width: 300px;
+        }
+
+    }
+
+    .view-profile-button {
+        .mdc-button__label {
+            color: blue;
+        }
+    }
+
+
+}
+
+.branch-section-header{
+    margin-top: 15px;
+}
+.contact-number {
+    display: flex;
+    align-items: center;
+}
+
+.lab-branch-button{
+    .mdc-button__label{
+        font-family: 'poppins';
+        color: rgba(0, 118, 215, 1) !important;
+    }
+}

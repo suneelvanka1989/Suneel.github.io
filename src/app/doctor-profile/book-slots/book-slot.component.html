@@ -1,0 +1,50 @@
+<div class="pt-20">
+  <h4 class="text-center page-section-title">Check Available Slots</h4>
+  <p class="text-center d-paragraph-medium">Book appointment for the required slot</p>
+</div>
+<hr class="hr-light" />
+<div *ngFor="let slot of slots;let index = index" class="d-profie-bookslot" [ngClass]="{active: availabilitySlotIndex === index}">
+  <address class="address">
+    Aurangabad Railway Station, Aurangabad <br />
+    <a href="#" class="link">Tapadia Diagnostic Centre</a> <br />
+    bansilal nagar, Landmark: Near Dr Bhapkar Marg, Aurangabad<br />
+    <a href="#" class="link">Get Diretion</a>
+  </address>
+  <div id="bookslot-time" class="text-center">
+    Thu<br />
+    02:00 PM - 07:00 PM
+  </div>
+  <div id="bookslot" class="text-center">
+    <strong class="mb-5 d-block">300</strong>
+    <button mat-raised-button color="primary" (click)="showAvailability(index)">Book Slot</button>
+  </div>
+
+  <mat-card class="d-profile-card available-slots" *ngIf="availabilitySlotIndex === index">
+    <!-- <mat-card-header>
+      <div class="d-chip">Consultation fess 300 Rs</div>
+      <mat-divider></mat-divider>
+    </mat-card-header> -->
+    <mat-card-content>
+      <div class="selection-wrapper">
+        <section class="d-periods">
+          <div class="period" *ngFor="let available of availability">
+            <p><i class="fa-solid fa-sun"></i> {{ available.period }}</p>
+            <mat-chip-listbox aria-label="Fish selection">
+              <mat-chip-option *ngFor="let slot of available.slots">
+                {{ slot }}
+              </mat-chip-option>
+            </mat-chip-listbox>
+          </div>
+        </section>
+        <mat-calendar [(selected)]="selected"></mat-calendar>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+        <button mat-flat-button color="accent" class="btn-lg">
+          Confirm Your Slot
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,471 @@
+.lab-profile-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px 0px;
+
+    .profile-header {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.test-search-button {
+    .mdc-button__label {
+        z-index: 0;
+    }
+}
+
+
+.book-slot-search {
+    margin: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .book-slot-search-field {
+        width: 80% !important;
+    }
+}
+
+.patient-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.patient-profile,
+.lab-location,
+.available-slots {
+    margin: 20px;
+    width: 350px;
+}
+
+.patient-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.s-title {
+    font-size: 0.7rem;
+}
+
+.edit-button {
+    color: #75A634 !important;
+    border: 1px solid #75A634;
+    border-radius: 30px;
+
+    .mat-mdc-button .mdc-button__label {
+        z-index: 0 !important;
+    }
+}
+
+.add-patient-button {
+    margin: 5px 75px 5px 75px;
+    color: #0076D7 !important;
+    border: 2px #0076D7 solid !important;
+    border-radius: 25px;
+
+    .mat-mdc-button .mdc-button__label {
+        z-index: 0 !important;
+    }
+}
+
+.test-list {
+    width: 900px;
+    box-shadow: 1px 1px 7px 1px grey;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.add-more {
+    color: blue !important;
+}
+
+.button-span-color {
+    color: red !important;
+}
+
+.remove {
+    border: 2px red solid !important;
+    border-radius: 30px !important;
+
+    .mat-mdc-button .mdc-button__label {
+        z-index: 0 !important;
+    }
+}
+
+.total-bill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 10px;
+}
+
+.test-section p {
+    font-family: "poppins";
+    padding: 5px;
+}
+
+
+.p-title {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 0px 10px 30px;
+
+    .patient {
+        margin-bottom: 0px !important;
+    }
+}
+
+.card-title {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.note {
+    color: #75A634;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line {
+    border: 1px solid #f2f2f2;
+    stroke-width: 1px;
+}
+
+.test-details {
+    display: flex;
+    justify-content: center;
+}
+
+
+.over-lay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 475px;
+    height: 475px;
+    padding: 20px;
+
+    @media (max-width:600px) {
+        width: 300px;
+    }
+
+    .popup-card-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .close {
+        height: 20px;
+        width: 20px;
+        font-size: 25px;
+        color: rgba(255, 0, 0, 1);
+        position: relative;
+        top: -20px;
+        left: -10px;
+    }
+
+    .dob-fields {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        gap: 15px;
+
+        .dob-input {
+            width: 180px;
+            border: none;
+
+            @media (max-width:600px) {
+                width: 75px;
+            }
+        }
+
+        .date-birth-picker {
+            display: flex;
+            border: 1px solid rgba(170, 170, 170, 0.25);
+            border-radius: 10px;
+            // margin: 20px 0px;
+
+            .mat-datepicker-toggle-default-icon {
+                color: #000;
+            }
+
+        }
+
+        .age-in-years {
+            height: 45px;
+            width: 130px;
+            border: 1px solid rgba(170, 170, 170, 0.25);
+            border-radius: 10px;
+
+            @media (max-width:600px) {
+                width: 75px;
+            }
+        }
+    }
+}
+
+.patient-name-field {
+    margin: 10px;
+
+    .patient-name-input {
+        border: 1px solid rgba(170, 170, 170, 0.25);
+        border-radius: 10px;
+        height: 50px;
+        width: 95%;
+        margin-bottom: 20px
+    }
+}
+
+.gender-selector {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.genders {
+
+
+    .gender-button {
+        border-radius: 0px !important;
+        margin: 0px;
+        width: 133px;
+        height: 45px;
+        border: 2px solid rgba(170, 170, 170, 0.25);
+
+        @media (max-width:600px) {
+            width: 75px;
+            height: 40px;
+        }
+    }
+
+    .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary {
+        width: 100% !important;
+        padding-left: 0;
+        padding-right: 0px !important;
+    }
+
+
+    .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic {
+        display: none;
+    }
+}
+
+
+.save-button {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+    .button-span-color {
+        border: 1px solid rgba(255, 0, 0, 1);
+        border-radius: 10px;
+    }
+}
+
+
+.day-slots-cursol {
+    position: relative;
+    z-index: 0;
+
+    .week-days {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owl-theme {
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px 0px;
+        background: none !important;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .owl-nav {
+        position: absolute;
+        display: flex;
+        top: calc(50% - 22px);
+        margin-top: 0px !important;
+
+        .owl-prev,
+        .owl-next {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background-image: url(../../../../assets/icons/labtest_icons/righ_slide_arrow.svg);
+        }
+
+        .owl-prev {
+            transform: rotate(180deg);
+        }
+
+        .owl-next {}
+
+        .owl-next:hover,
+        .owl-prev:hover {
+            background-image: url(../../../../assets/icons/labtest_icons/righ_slide_arrow.svg);
+        }
+    }
+
+    .owl-theme .owl-nav [class*=owl-] {
+        text-indent: -9999px;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(214, 214, 214, 0.5);
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        transition: background-color linear 500ms;
+    }
+}
+
+.mat-mdc-button .mdc-button__label {
+    z-index: 0 !important;
+}
+
+// chang clinic options
+
+.over-lay,
+.popup-more-labs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-list {
+    ul {
+        li {
+            list-style: disc;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+.save-button {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+    .button-span-color {
+        border: 1px solid rgba(255, 0, 0, 1);
+        border-radius: 10px;
+    }
+}
+
+
+
+.address-lable {
+    color: #0076D7;
+}
+
+.address {
+    font-size: 0.9rem;
+}
+
+.more-labs-list {
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+}
+
+.more-labs-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.branch-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(232, 232, 232, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.lab-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(1, 78, 134, 1);
+}
+
+.day-slots-cursol {
+    .mat-mdc-button .mdc-button__label {
+        z-index: 0 !important;
+    }
+}
+
+.more-lab-title {
+    p {
+        margin: 0px 0px 0px !important;
+    }
+
+}
+
+.close-button {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+
+.close-icon {
+    color: rgba(255, 0, 0, 1);
+}
+
+// carosel

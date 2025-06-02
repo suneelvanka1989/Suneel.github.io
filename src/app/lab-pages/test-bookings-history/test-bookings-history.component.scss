@@ -1,0 +1,92 @@
+.page-headers {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 25px 0px 25px;
+
+    p {
+        color: #014E86;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}
+
+
+.report-history {
+    padding: 25px;
+}
+
+.lab-title {
+    color: #014E86;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-content {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}
+
+.bill-amount{
+    display: flex;
+    row-gap: 25px;
+    .price{
+        color: red;
+    }
+}
+
+.card-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+    .mdc-button__label{
+        height: 30px !important;
+    }
+}
+
+.button-text {
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    .mat-typography p {
+        margin: 0px 0px 0px !important;
+    }
+}
+
+.download-option {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 25px;
+
+    a {
+        color: #8CC63E;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.test-list{
+    display: flex;
+    gap: 10px;
+}

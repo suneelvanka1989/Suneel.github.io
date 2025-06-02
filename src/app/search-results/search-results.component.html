@@ -1,0 +1,330 @@
+<div class="docphine-main search-result-page">
+  <div class="results">
+    <h3 class="result-header">200+ Best cardiologist in Aurangabad</h3>
+    <div class="dropdowns">
+      <div class="video-consult">
+        <input type="checkbox" name="video-consult" id="video-consult" />
+        <label for="video-consult" class="dropdown-header">Video Consult</label>
+      </div>
+      <div class="nav-dropdown">
+        <div class="dropdown">
+          <mat-label>Availability</mat-label>
+          <div class="dropdown-content">
+            <mat-radio-group aria-label="availability">
+              <mat-radio-button value="1">Today</mat-radio-button>
+              <mat-radio-button value="2">Today</mat-radio-button>
+              <mat-radio-button value="2">Pick a date</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <mat-label>All Filters</mat-label>
+          <div class="dropdown-content">
+            <!-- <mat-radio-group>
+              <p>Gender</p>
+              <mat-radio-button value="1">Male</mat-radio-button>
+              <mat-radio-button value="2">Female</mat-radio-button>
+              <p>consultation</p>
+              <mat-radio-button value="1">Free</mat-radio-button>
+              <mat-radio-button value="2">50-200</mat-radio-button>
+              <mat-radio-button value="2">200-500</mat-radio-button>
+              <mat-radio-button value="1">>500</mat-radio-button>
+            </mat-radio-group> -->
+
+
+            <mat-card>
+              <mat-card-content>
+
+                <section class="example-section">
+                  <label class="example-margin">Gender:</label>
+                  <mat-radio-group [(ngModel)]="gender">
+                    <mat-radio-button class="example-margin" value="male">Male</mat-radio-button>
+                    <mat-radio-button class="example-margin" value="female">Female</mat-radio-button>
+                  </mat-radio-group>
+                </section>
+
+              </mat-card-content>
+
+              <mat-card-content>
+                <section class="example-section">
+                  <label class="example-margin">consultation:</label>
+                  <mat-radio-group [(ngModel)]="labelPosition" (change)="filterData(labelPosition)">
+                    <mat-radio-button value="1">{{'<50'}}</mat-radio-button>
+                        <mat-radio-button value="2">50-200</mat-radio-button>
+                        <mat-radio-button value="3">200-500</mat-radio-button>
+                        <mat-radio-button value="4">>500</mat-radio-button>
+                  </mat-radio-group>
+                </section>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <mat-label>Sory By</mat-label>
+          <div class="dropdown-content">
+            <mat-radio-group class="dropbtn" [(ngModel)]="sortBy" (change)="sortData(sortBy)">
+              <mat-radio-button value="lowerFirst">Low to High</mat-radio-button>
+              <mat-radio-button value="higherFirst">High to Low</mat-radio-button>
+              <mat-radio-button value="byName">Earlist</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+      </div>
+      <button mat-stroked-button class="d-btn-small" type="button" (click)="toggleResultFilter($event)">
+        <i class="fa-solid fa-sliders"></i>
+        Filter
+      </button>
+    </div>
+    <div class="m-result-filter" *ngIf="showMobileFilters">
+      <h4>Add Options</h4>
+      <select [(ngModel)]="selectedFilter">
+        <option *ngFor="let option of filterOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid-container doctor-profile-results">
+    <div class="doctor-profiles" id="result-top">
+      <div class="result-wrapper">
+        <!-- [Should always Even] -->
+        <div class="doctor-card" *ngFor="let details of filteredResult">
+
+
+          <!-- Doctor -->
+          <div class="doctor-dashboard" *ngIf="details.type ==='Doctors'">
+            <div class="image">
+              <img [src]="details.DoctorImage" alt="doctor-image" class="doctor-image" />
+              <p class="experience">{{details.Experiment}} {{details.Experiment > 1 ? 'Years' : 'Year'}} </p>
+              <p class="price">Rs. {{details.Fees}}</p>
+            </div>
+            <div class="doctor-details">
+              <strong class="doctor-name d-block">{{details.DoctorName}}</strong>
+              <span class="specialization d-block">{{details.SpecializationName}}</span>
+              <span class="d-block mb-5">{{details.Education}}</span>
+              <div class="rating-band mb-5">
+                <div class="rate-badge">
+                  <span class="rating-number">{{details.Ratings}}</span>
+                  <mat-icon>star_border</mat-icon>
+                </div>
+                <div class="rating-stars">
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                </div>
+                <span class="d-flex pl-5">{{details.TotalRatings}}</span>
+              </div>
+
+              <div class="d-flex-center mb-5">
+                <mat-icon class="icon-color-gray">people</mat-icon>
+                <!-- Should have different property -->
+                <span class="pl-10">{{details.TotalRatings}} Patient Stories</span>
+              </div>
+              <div class="d-flex-center mb-5">
+                <mat-icon matPrefix class="icon-color-gray">location_on</mat-icon>
+                <span class="pl-10">{{details.Address}}</span>
+              </div>
+              <p class="add_on"><a href="">+3 more</a></p>
+            </div>
+          </div>
+
+          <!-- Hospital -->
+          <div class="doctor-dashboard hospital" *ngIf="details.type ==='Hospitals'">
+            <div class="image">
+              <img [src]="details.HospitalImage" alt="doctor-image" class="doctor-image hospital-image" />
+              <p class="price pt-5">Rs. {{details.Fees}}</p>
+            </div>
+            <div class="doctor-details">
+              <strong class="doctor-name d-block">{{details.HospitalName}}</strong>
+              <span class="specialization d-block" *ngIf="details.Specilization.length > 3; else loggedOut">
+                Multi Specialty Hospital
+              </span>
+              <ng-template #loggedOut>
+                <span class="specialization d-inline-block"
+                  *ngFor="let specilization of details.Specilization;let i = index; let first = first ;let last = last;">
+                  {{specilization }}<i class="d-string-divider" *ngIf="!last"></i>
+                </span>
+              </ng-template>
+              <div class="rating-band mb-5">
+                <div class="rate-badge">
+                  <span class="rating-number">{{details.Ratings}}</span>
+                  <mat-icon>star_border</mat-icon>
+                </div>
+                <div class="rating-stars">
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                  <mat-icon>star_border</mat-icon>
+                </div>
+                <span class="d-flex pl-5">{{details.TotalRatings}}</span>
+              </div>
+
+              <div class="d-flex-center mb-5">
+                <mat-icon class="icon-color-gray">people</mat-icon>
+                <!-- Should have different property -->
+                <span class="pl-10">{{details.TotalRatings}} Patient Stories</span>
+              </div>
+              <div class="d-flex-center mb-5">
+                <mat-icon matPrefix class="icon-color-gray">location_on</mat-icon>
+                <span class="pl-10">{{details.HospitalAddess}}</span>
+              </div>
+              <p class="add_on"><a href="">+3 more</a></p>
+            </div>
+          </div>
+
+          <div class="doctor-card-action">
+            <button mat-stroked-button (click)="navigateToProfile(details)">
+              View Profile
+            </button>
+            <button mat-raised-button color="accent" class="online-consult" *ngIf="details.type ==='Doctors'">
+              Online Consult
+            </button>
+            <button mat-raised-button color="primary" class="book-appointment" (click)="bookAppointment('doctorID')">
+              Book Appointment
+            </button>
+          </div>
+
+        </div>
+        <!-- Make it visible only in Mobile View -->
+        <div class="right-side-nav w-100" fxHide.gt-xs>
+          <div class="result-need-assistance">
+            <div class="form-header">
+              <h3 class="form-header text-roboto">Need More Assistance</h3>
+              <p class="text-roboto">Drop a reques for an enquiry</p>
+            </div>
+            <div class="form-container">
+              <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput type="search" placeholder="First Name" />
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="search" placeholder="Last Name" />
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Contact</mat-label>
+                <input matInput type="search" placeholder="Contact" />
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="search" placeholder="Email" />
+              </mat-form-field>
+              <div class="text-center">
+                <button mat-raised-button color="primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- sidePan -->
+    <div class="right-side-nav" id="sidePan">
+      <!-- form for more assistance  -->
+      <div class="result-need-assistance" fxHide.lt-sm>
+        <div class="form-header">
+          <h3 class="form-header text-roboto">Need More Assistance</h3>
+          <p class="text-roboto">Drop a reques for an enquiry</p>
+        </div>
+        <div class="form-container">
+          <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput type="search" placeholder="First Name" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="search" placeholder="Last Name" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Contact</mat-label>
+            <input matInput type="search" placeholder="Contact" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="search" placeholder="Email" />
+          </mat-form-field>
+          <div class="text-center">
+            <button mat-raised-button color="primary">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- articls  -->
+      <div class="articles-list">
+        <div class="article-heading">
+          <p class="text-roboto">
+            Get <b>FREE</b> articles to read on healthcare
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img class="image" src="../../assets/img/fooditems.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">
+            Food items that must be added to make a perfect meal.
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img src="../../assets/img/weightimg.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">
+            Dieting is not a solution.
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img src="../../assets/img/yogaimg.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">
+            Unknown benefits of Yoga.
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img src="../../assets/img/bp-img.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">
+            How to keep your blood pressure In-line
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img src="../../assets/img/pregnency.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">
+            10 Things a mother must take care of during pregnancy.
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img src="../../assets/img/depression-img.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">
+            Depression is not just a state of mind.
+          </p>
+        </div>
+        <div class="article">
+          <figure>
+            <img src="../../assets/img/stomach-img.svg" alt="article" />
+          </figure>
+          <p class="article-description text-roboto">What is Osteoporosis?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

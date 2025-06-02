@@ -1,0 +1,133 @@
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.w-100 {
+  width: 100% !important;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mr-1 {
+  margin-right: 5px;
+}
+.mr-2 {
+  margin-right: 10px;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+  padding-left: 5px;
+}
+
+.d-heading-1 {
+  color: #0076d7;
+  @media (max-width: 600px) {
+    font-size: 1.4rem !important;
+    line-height: 1.8rem !important;
+    margin-bottom: 10px !important;
+  }
+}
+.page-section-title {
+  font-size: 1.25rem !important;
+  line-height: 30px !important;
+  font-family: "Poppins", sans-serif !important;
+  margin-bottom: 5px !important;
+  font-weight: 500 !important;
+  @media (max-width: 600px) {
+    font-size: 1.1rem !important;
+    line-height: 1.2rem !important;
+  }
+}
+.page-section-sub-title {
+  font-size: 1.124rem !important;
+  line-height: 28px !important;
+  font-family: "Poppins", sans-serif !important;
+  margin-bottom: 5px !important;
+  font-weight: 600 !important;
+  @media (max-width: 600px) {
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+  }
+}
+.d-paragraph-lead {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+  @media (max-width: 600px) {
+    font-size: 1.05rem;
+    line-height: 1.3rem;
+    padding-bottom: 0;
+  }
+}
+.d-paragraph-medium {
+  font-size: 1.05rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+  @media (max-width: 600px) {
+    font-size: 0.95rem !important;
+  }
+}
+hr.hr-light {
+  height: 1px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.icon-color-gray {
+  color: #8b8686;
+}
+
+@media (max-width: 600px) {
+  .d-m-column {
+    flex-direction: column !important;
+    padding-bottom: 20px;
+  }
+}
+
+.d-string-divider {
+  height: 10px;
+  width: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #8b8686;
+  display: inline-block;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.p-r-0 {
+  padding-right: 0 !important;
+}

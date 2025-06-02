@@ -1,0 +1,84 @@
+.mat-toolbar .mat-mdc-button-base.mat-unthemed {
+  color: black !important;
+}
+.mat-drawer-container {
+  display: none !important;
+  background-color: transparent;
+}
+.logo a {
+  margin-top: 15px;
+  display: inline-block;
+}
+.mat-sidenav-container .item-text a {
+  border-bottom: 1px solid #777777;
+  font-size: 1.2rem;
+}
+.sidebar-nav {
+  .mat-mdc-list-item-unscoped-content {
+    font-size: 1rem;
+  }
+  h4 {
+    margin-bottom: 0;
+    height: 20px;
+    font-size: 1.1rem;
+  }
+  .mat-mdc-list-item {
+    height: 33px !important;
+  }
+}
+.mat-sidenav-container i {
+  padding-right: 15px;
+}
+.sidebarClose {
+  justify-content: flex-end;
+  padding-top: 5px;
+  .mat-mdc-list-item {
+    width: auto;
+    font-size: 30px;
+    cursor: pointer !important;
+  }
+}
+@media (max-width: 960px) {
+  .logo {
+    padding-left: 80px;
+    display: inline-block;
+    text-align: center;
+  }
+  .mat-drawer-container.mat-drawer-container-has-open {
+    display: block !important;
+    position: fixed;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .d-nav-header {
+    .h-menu {
+      top: -10px;
+    }
+  }
+  .logo {
+    padding-left: 15px;
+    img {
+      max-width: 62%;
+    }
+  }
+  .login {
+    .mdc-button__label {
+      font-size: 12px;
+    }
+  }
+  .mat-toolbar .mat-mdc-button-base.mat-unthemed {
+    height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    padding-left: 15px;
+    a {
+      max-width: 86%;
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+  &.media-container {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid #f2f2f2;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.media-body {
+  flex: 1;
+  padding-left: 15px;
+  h5 {
+    font-size: 0.938rem;
+    font-weight: 600;
+  }
+  small {
+    padding-top: 3px;
+  }
+}

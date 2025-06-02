@@ -1,0 +1,82 @@
+.d-profie-bookslot {
+  padding: 20px 20px 20px 40px;
+  font-size: 0.938rem;
+  line-height: 22px;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  display: grid;
+  grid:
+    "address bookslottime bookslot"
+    "availableslots availableslots availableslots";
+  row-gap: 5px;
+  .address {
+    grid-area: address;
+  }
+  .bookslot-time {
+    grid-area: bookslottime;
+  }
+  .bookslot {
+    grid-area: bookslot;
+  }
+  .available-slots {
+    grid-area: availableslots;
+  }
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    left: 10px;
+    top: 24px;
+    background: gray;
+    position: absolute;
+  }
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  .mat-mdc-card {
+    box-shadow: none;
+  }
+  &.active {
+    background: aliceblue;
+  }
+  @media (max-width: 960px) {
+    grid:
+    "address"
+    "bookslottime"
+    "bookslot"
+    "availableslots";
+    .available-slots {
+      margin-top: 20px;
+    }
+  }
+  
+}
+
+.d-profile-card {
+  .selection-wrapper {
+    display: flex;
+    gap: 50px;
+    .d-periods {
+      max-width: 60%;
+    }
+    .mat-calendar {
+      min-width: 40%;
+    }
+    @media (max-width: 960px) {
+      flex-direction: column;
+      gap: 10px;
+      .d-periods {
+        max-width: 100%;
+      }
+      .mat-calendar {
+        min-width: 100%;
+      }
+    }
+  }
+  .mat-mdc-chip-action-label {
+    font-size: 120% !important;
+  }
+}

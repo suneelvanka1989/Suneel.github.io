@@ -1,0 +1,195 @@
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 20px 30px;
+}
+
+.title-text {
+    color: #014E86;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.details-patient {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 20px 20px 50px;
+}
+
+
+
+.image {
+    height: 135px;
+    width: 135px;
+}
+
+.lab-image {
+    border-radius: 20px;
+}
+
+.patient-details {
+    display: flex;
+    gap: 20px;
+
+    .sp-1 {
+        color: #42526E;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .sp-2 {
+        color: #000;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .sp-3{
+        color: #0076D7;
+    }
+}
+
+.details-span {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.pay-tab {
+    background-color: black !important;
+}
+
+.desc-payment {
+    height: 250px;
+    width: 800px;
+    background-color: #F5F5F5;
+}
+
+.payment-tab {
+    width: 800px;
+    gap: 5px;
+}
+
+.payment-gate-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.payment-input {
+    gap: 20px;
+}
+
+.verify-button {
+    background-color: #0076D7;
+}
+
+.mdc-tab-indicator {
+    background-color: #F5F5F5 !important;
+    border-radius: 10px;
+}
+
+.mat-mdc-tab-labels {
+    gap: 10px;
+}
+
+
+.mdc-tab-indicator__content--underline {
+    height: 5px !important;
+    background-color: #0076D7 !important;
+    border-bottom-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+}
+
+.mat-mdc-tab-body-wrapper {
+    height: 300px;
+}
+
+.label-imgs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.or {
+    margin: 0px 0px 0px !important
+}
+
+.desc-payment {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.payament-tab {
+    padding-left: 25px;
+    color: #0076D7;
+}
+
+.payment-input {
+    display: flex;
+    padding-left: 25px;
+}
+
+
+.payment-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upi-input {
+    width: 360px;
+    height: 45px;
+    background: #FFF;
+    border-radius: 10px;
+
+    .mat-mdc-text-field-wrapper {
+        border-radius: 8px !important;
+        padding: 0px !important;
+    }
+
+}
+
+.verify-button {
+    margin: 15px 0px;
+    width: 100px;
+    height: 45px;
+}
+
+.tab-button {
+    display: flex;
+    justify-content: center;
+}
+
+.pay-at-center {
+    padding: 25px;
+}
+
+.pay-at-cetr-desc {
+    color: #000;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.confirm-button {
+    width: 300px !important;
+}

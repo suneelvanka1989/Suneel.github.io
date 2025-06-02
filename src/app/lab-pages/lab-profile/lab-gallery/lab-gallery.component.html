@@ -1,0 +1,93 @@
+<div class="d-profile-gallery">
+    <div class="pt-20">
+        <p class="text-center d-paragraph-medium">Post a picture or a video for better interaction.</p>
+    </div>
+    <hr class="hr-light" />
+
+    <div class="text-center mb-20 pt-20">
+        <button mat-flat-button color="primary">Upload &nbsp;<i class="fa fa-upload" aria-hidden="true"></i></button>
+    </div>
+
+    <owl-carousel-o [options]="customOptions" class="d-custom-height">
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-1.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-2.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-3.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-4.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-5.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-6.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <!-- <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-1.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-1.svg" alt="Image 1" />
+            </figure>
+        </ng-template>
+        <ng-template carouselSlide>
+            <figure>
+                <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-1.svg" alt="Image 1" />
+            </figure>
+        </ng-template> -->
+    </owl-carousel-o>
+
+    <div class="text-center mb-20">
+        <button (click)="showMore()" mat-flat-button color="accent">{{buttonTitle}}</button>
+    </div>
+
+    <div class="d-grid d-profile-gallery-more" *ngIf="showMoreImages">
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-1.svg" alt="Some ">
+        </figure>
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-2.svg"
+                alt="Some ">
+        </figure>
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-3.svg"
+                alt="Some ">
+        </figure>
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-4.svg"
+                alt="Some ">
+        </figure>
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-5.svg"
+                alt="Some ">
+        </figure>
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-6.svg"
+                alt="Some ">
+        </figure>
+        <figure>
+            <img src="../../../../assets/img/lab-profile/lab-gallery/lab-image-1.svg" alt="Some ">
+        </figure>
+    </div>
+
+    <!-- End of Media -->
+</div>

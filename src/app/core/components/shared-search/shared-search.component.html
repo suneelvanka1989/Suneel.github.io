@@ -1,0 +1,120 @@
+<!-- Mobile Search -->
+<!-- (!(pageName === '' || pageName === '/' || pageName === 'home')) && -->
+<div class="d-mobile-search d-global-search" *ngIf="isMobileView || (pageName !== '')"
+  [ngClass]="{'home-page': (pageName === '' || pageName === '/' || pageName === 'home'), 'search-page': (pageName === 'search'),'labtest-search-page' : (pageName === 'labtest-search'),  'other-pages': (pageName === 'other')}">
+  <div class="form-container"> 
+    <div class="mobile-location-select text-center">
+      <mat-form-field class="d-custom-input-text">
+        <mat-icon matPrefix>location_on</mat-icon>
+        <mat-chip-grid #chipGrid aria-label="Place selection">
+          <mat-chip-row *ngFor="let place of selectedPlaces" (removed)="remove(place)">
+            {{ place.name }}
+            <button matChipRemove [attr.aria-label]="'remove ' + place">
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip-row>
+        </mat-chip-grid>
+        <input placeholder="Select Location" #placeInput [formControl]="placeCtrl" [matChipInputFor]="chipGrid"
+          [matAutocomplete]="auto" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+          (matChipInputTokenEnd)="add($event)" id="location-input" #locationAutocompleteInput>
+        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+          <mat-option *ngFor="let fruit of filteredPlaces | async" [value]="fruit">
+            {{fruit.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline" class="d-main-search d-custom-input-text  d-small-form-field">
+      <mat-icon matPrefix>search</mat-icon>
+      <input matInput type="search" placeholder="Search here Doctor Name, Hospital, Clinic, etc."
+        aria-label="Select Place" [matAutocomplete]="mainSeach" [formControl]="searchOptionCtrl"
+        (focus)="validatePlace()" />
+      <mat-autocomplete #mainSeach="matAutocomplete" (optionSelected)="onOptionSelected($event)"
+        [displayWith]="displayFn">
+        <mat-optgroup *ngFor="let group of filteredSearchOptions | async" [label]="group.name">
+          <mat-option *ngFor="let details of group.values" [value]="details">
+            <div class="media media-container">
+              <img class="mr-3" alt="30x30" src="https://placehold.jp/30x30.png" data-holder-rendered="true"
+                style="width: 30px; height: 30px" />
+              <div class="media-body">
+                <div fxLayout="row">
+                  <div>
+                    <h5 class="mb-0">{{ details.name }}</h5>
+                    <small class="d-block" *ngIf="group.name === 'Doctors' || group.name ==='Diseases'">{{
+                      details.specializationName }}</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-option>
+        </mat-optgroup>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+</div>
+<!-- End  Mobile Serch components  -->
+
+<div class="landing-search d-home-desktop-search d-input-text"
+  *ngIf="(pageName === '' || pageName === '/' || pageName === 'home') && !isMobileView">
+  <div class="d-search-tab" fxHide.lt-sm>
+    <mat-tab-group animationDuration="1ms" (selectedTabChange)="selectedTabValue($event)">
+      <mat-tab label="Search Expert"></mat-tab>
+      <mat-tab label="Talk Online"></mat-tab>
+      <mat-tab label="Pharmacy"></mat-tab>
+      <mat-tab label="Test Appointment"></mat-tab>
+      <mat-tab label="Diagnosis"></mat-tab>
+    </mat-tab-group>
+    <div class="form-container">
+      
+        <mat-form-field
+          *ngIf=" labelName === 'Search Expert' || labelName === 'Test Appointment' || labelName === 'Diagnosis'" class="d-custom-input-text d-location-search-input">
+          <mat-icon matPrefix class="p-r-0">location_on</mat-icon>
+          <mat-chip-grid #chipGrid aria-label="Place selection">
+            <mat-chip-row *ngFor="let place of selectedPlaces" (removed)="remove(place)">
+              {{ place.name }}
+              <button matChipRemove [attr.aria-label]="'remove ' + place">
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip-row>
+          </mat-chip-grid>
+          <input placeholder="Select Location" #placeInput [formControl]="placeCtrl" [matChipInputFor]="chipGrid"
+            [matAutocomplete]="auto" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+            (matChipInputTokenEnd)="add($event)" id="location-input" #locationAutocompleteInput>
+          <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+            <mat-option *ngFor="let fruit of filteredPlaces | async" [value]="fruit">
+              {{fruit.name}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+
+      <mat-form-field appearance="outline" class="d-main-search d-custom-input-text d-doc-search-input">
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput type="search" placeholder="Search here Doctor Name, Hospital, Clinic, etc."
+          aria-label="Select Place" [matAutocomplete]="mainSeach" [formControl]="searchOptionCtrl"
+          (focus)="validatePlace()" />
+        <mat-autocomplete #mainSeach="matAutocomplete" (optionSelected)="onOptionSelected($event)"
+          [displayWith]="displayFn">
+          <mat-optgroup *ngFor="let group of filteredSearchOptions | async" [label]="group.name">
+            <mat-option *ngFor="let details of group.values" [value]="details">
+              <div class="media media-container">
+                <img class="mr-3" alt="30x30" src="https://placehold.jp/30x30.png" data-holder-rendered="true"
+                  style="width: 30px; height: 30px" />
+                <div class="media-body">
+                  <div fxLayout="row">
+                    <div>
+                      <h5 class="mb-0">{{ details.name }}</h5>
+                      <small class="d-block" *ngIf="group.name === 'Doctors' || group.name ==='Diseases'">{{
+                        details.specializationName }}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

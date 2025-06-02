@@ -1,0 +1,122 @@
+// Section 3 - Category experts
+.d-grid-container {
+  display: grid;
+  // grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1298px) {
+    // grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 700px) {
+    // grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 599px) {
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+}
+
+.landing-thumbnail-group {
+  flex-wrap: wrap;
+  > div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+.landing-thumbnail {
+  margin-bottom: 15px;
+  @media (max-width: 600px) {
+    margin-bottom: 8px;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  figure {
+    margin-bottom: 10px;
+  }
+  &.dietitian figure {
+    background: url("../../../assets/img/experts/dietitian.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/dietitian_c.svg") no-repeat
+        center center transparent;
+    }
+  }
+  &.gynecologist figure {
+    background: url("../../../assets/img/experts/gynecologist.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/gynecologist_c.svg")
+        no-repeat center center transparent;
+    }
+  }
+  &.dentist figure {
+    background: url("../../../assets/img/experts/dentist.svg") no-repeat center
+      center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/dentist_c.svg") no-repeat
+        center center transparent;
+    }
+  }
+  &.orthopedic figure {
+    background: url("../../../assets/img/experts/orthopedic.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/orthopedic_c.svg") no-repeat
+        center center transparent;
+    }
+  }
+  &.homeopathy figure {
+    background: url("../../../assets/img/experts/homeopathy.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/homeopathy_c.svg") no-repeat
+        center center transparent;
+    }
+  }
+  &.psychologist figure {
+    background: url("../../../assets/img/experts/psychologist.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/psychologist_c.svg")
+        no-repeat center center transparent;
+    }
+  }
+  &.pediatrician figure {
+    background: url("../../../assets/img/experts/pediatrician.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/pediatrician_c.svg")
+        no-repeat center center transparent;
+    }
+  }
+  &.dermatologist figure {
+    background: url("../../../assets/img/experts/dermatologist.svg") no-repeat
+      center center #3fbdf1;
+    &:hover {
+      background: url("../../../assets/img/experts/dermatologist_c.svg")
+        no-repeat center center transparent;
+    }
+  }
+  p {
+    line-height: 1.1;
+    @media (max-width: 960px) {
+      font-size: 1.1rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+  h3 {
+    @media (max-width: 960px) {
+      font-size: 1.125rem;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.025rem;
+      margin-bottom: 8px;
+    }
+    
+  }
+}

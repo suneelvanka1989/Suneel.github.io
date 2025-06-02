@@ -1,0 +1,589 @@
+<div class="page-nav">
+    <div class="title">
+        <p class="title-text">Order overview</p>
+    </div>
+
+    <div class="title">
+        <p class="title-text">Back</p>
+    </div>
+</div>
+
+
+<div class="order-over-view-page">
+    <div class="over-view-tabs">
+        <div class="test-details-tab">
+            <mat-accordion class="headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Test Details
+                        </mat-panel-title>
+                        <!-- <mat-panel-description>
+                            Type your name and age
+                            <mat-icon>account_circle</mat-icon>
+                        </mat-panel-description> -->
+                    </mat-expansion-panel-header>
+                    <div class="labs-list">
+                        <p class="s-title">Docphine Labs:</p>
+
+                        <button mat-button class="add-more">
+                            + Add More Tests
+                        </button>
+
+                    </div>
+                    <div class="" *ngFor="let a of [1,2]">
+                        <div class="test-type card-header">
+                            <div class="test-name">
+                                <mat-card-header>
+                                    <p class="card-title">Mri Brain with Cisternography</p>
+                                </mat-card-header>
+
+                                <mat-card-content>
+                                    <p class="note list-content">Note :</p>
+                                    <li class="note-description list-content">Reports available in: 48hours after test /
+                                        sample
+                                        collection</li>
+                                </mat-card-content>
+                            </div>
+                            <div class="prices">
+
+                                <p class="price">Price: Rs. 300/-</p>
+
+                                <p class="price">Rs. 500/-</p>
+
+                            </div>
+                            <div class="remove-button">
+                                <button mat-button class="button-span-color remove">
+                                    <mat-icon class="button-span-color">delete</mat-icon>
+                                    Remove
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </mat-expansion-panel>
+
+            </mat-accordion>
+        </div>
+
+        <div class="patient-details"><mat-accordion class="headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Patient Details
+                        </mat-panel-title>
+                        <!-- <mat-panel-description>
+                        Type your name and age
+                        <mat-icon>account_circle</mat-icon>
+                    </mat-panel-description> -->
+                    </mat-expansion-panel-header>
+
+                    <p class="s-title">Add details of the patient:</p>
+
+                    <div>
+                        <div class="patient-details">
+                            <p class="p-title">patient-details</p>
+                            <div class="line"></div>
+                            <div class="tab-sub-title">Add details of the patient:</div>
+                            <div class="patient-name">
+                                <div>
+                                    <mat-checkbox class="patient p-title">Vidyesha Pandey</mat-checkbox>
+                                    <div class="patient-age-gender-details">
+                                        <span class="patient-data">23 Years /</span>
+                                        <span class="patient-data">Female /</span>
+                                        <span class="patient-data">Dr. Self</span>
+                                    </div>
+                                </div>
+                                <button mat-button class="edit-button" (click)="editPatientFields()">
+
+                                    Edit
+                                </button>
+                            </div>
+
+                            <div class="button-add-patient">
+                                <button mat-button class="add-patient-button" (click)="addPatientFields()">
+
+                                    Add new patient
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="patient-name">
+
+                    </div>
+
+                    <!-- add-patient fields -->
+
+                    <div class="over-lay" *ngIf="addPatient">
+
+                        <mat-card class="content">
+
+                            <div>
+                                <div class="form-patient-details">
+
+                                    <div class="popup-card-header">
+                                        <p class="card-text">Add New patient</p>
+                                        <div class="close">
+                                            <button mat-icon-button
+                                                aria-label="Example icon button with a vertical three dot icon"
+                                                (click)="closeTab()">
+                                                <mat-icon class="close-icon">close_mark</mat-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+
+
+                                    <div class="patient-name-field">
+                                        <input type="text" placeholder="Enter Ptient Name" class="patient-name-input">
+                                    </div>
+
+
+                                    <div class="gender-selector">
+                                        <mat-chip-listbox aria-label="genders" class="genders">
+                                            <mat-chip-option color="accent" class="gender-button male"><i
+                                                    class="fa-solid fa-mars"></i>Male</mat-chip-option>
+                                            <mat-chip-option color="accent" class="gender-button female"><i
+                                                    class="fa-solid fa-venus"></i>Female</mat-chip-option>
+                                            <mat-chip-option color="accent"
+                                                class="gender-button other">Others</mat-chip-option>
+                                        </mat-chip-listbox>
+                                    </div>
+
+
+                                    <div class="dob-fields">
+
+                                        <div class="date-birth-picker">
+
+                                            <input matInput [matDatepicker]="picker"
+                                                placeholder="Enter DOB (MM/DD/YYYY)" class="dob-input">
+                                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+
+                                        </div>
+                                        <p>Or</p>
+
+                                        <input type="text" class="age-in-years" placeholder="Age in Years">
+                                    </div>
+
+
+
+
+                                    <div class="note-list">
+
+                                        <p style="color: #FF0000;">Note:</p>
+                                        <ul>
+                                            <li> All Fields are Mandatory</li>
+                                            <li>You can enter either the Date Of Birth or the Age of the patient for
+                                                their age</li>
+                                            <li>To enter the age of an infant, please use the Date of Birth field</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="line"></div>
+                            <div class="save-button">
+                                <button mat-button class="button-span-color remove">
+                                    Save & Continue
+                                </button>
+
+                            </div>
+                        </mat-card>
+
+
+                    </div>
+
+                    <!-- edit patient -->
+
+                    <div class="over-lay" *ngIf="editPatientDetails">
+
+                        <mat-card class="content">
+
+                            <div>
+                                <div class="form-patient-details">
+
+                                    <div class="popup-card-header">
+                                        <p class="card-text">Add New patient</p>
+                                        <div class="close">
+                                            <button mat-icon-button
+                                                aria-label="Example icon button with a vertical three dot icon"
+                                                (click)="closeTab()">
+                                                <mat-icon class="close-icon">close_mark</mat-icon>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+
+
+                                    <div class="patient-name-field">
+                                        <input type="text" placeholder="Full Name" class="patient-name-input">
+                                    </div>
+
+
+                                    <div class="gender-selector">
+                                        <mat-chip-listbox aria-label="genders" class="genders">
+                                            <mat-chip-option color="accent" class="gender-button male"><i
+                                                    class="fa-solid fa-mars"></i>Male</mat-chip-option>
+                                            <mat-chip-option color="accent" class="gender-button female"><i
+                                                    class="fa-solid fa-venus"></i>Female</mat-chip-option>
+                                            <mat-chip-option color="accent"
+                                                class="gender-button other">Others</mat-chip-option>
+                                        </mat-chip-listbox>
+                                    </div>
+
+
+                                    <div class="dob-fields">
+
+                                        <div class="date-birth-picker">
+
+                                            <input matInput [matDatepicker]="picker"
+                                                placeholder="Enter DOB (MM/DD/YYYY)" class="dob-input">
+                                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+
+                                        </div>
+                                        <p>Or</p>
+
+                                        <input type="text" class="age-in-years" placeholder="Age in Years">
+                                    </div>
+
+
+
+
+
+                                    <div class="note-list">
+
+                                        <p style="color: #FF0000;">Note:</p>
+                                        <div class="note-list">
+                                            <ul>
+                                                <li>All Fields are Mandatory</li>
+                                                <li>You can enter either the Date Of Birth or the Age of the patient for
+                                                    their age</li>
+                                                <li>To enter the age of an infant, please use the Date of Birth field
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="line"></div>
+                            <div class="save-button">
+                                <button mat-button class="button-span-color remove">
+                                    Save & Continue
+                                </button>
+
+                            </div>
+
+                        </mat-card>
+
+
+                    </div>
+
+                </mat-expansion-panel>
+
+            </mat-accordion></div>
+
+        <div class="test-details">
+            <mat-accordion class="headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Lab Detals
+                        </mat-panel-title>
+                        <!-- <mat-panel-description>
+                                Type your name and age
+                                <mat-icon>account_circle</mat-icon>
+                            </mat-panel-description> -->
+                    </mat-expansion-panel-header>
+
+                    <p class="s-title">Centers available for all selected tests :</p>
+
+                    <!-- <div class="cart-lab-address">
+                        <div class="popular-labs-card" *ngFor="let a of [1,2,3]">
+
+                            <section class="lab-details-select">
+
+                                <div><mat-checkbox class="address-checkbox">
+
+                                        <span>MIG - 148 - I - NCK 24/240</span>,
+                                        <span>Road No 1 KPHB Colony</span>,
+                                        <span>Opposite To Sankhya
+                                            Hospital</span>,
+                                        <span>Kukatpally</span>,
+                                        <span>Hyderabad - 500072</span>
+                                        <p><a href="/">Get Directions</a></p>
+
+
+                                    </mat-checkbox>
+                                </div>
+
+
+
+                            </section>
+                        </div>
+
+
+                    </div> -->
+
+                    <div class="home-service-page">
+
+                        <div *ngIf="show">
+                            <div class="mobile-location-select text-center">
+                                <!-- Location -->
+                                <mat-form-field style="width: 75%;" class="d-custom-input-text">
+                                    <mat-icon matPrefix>location_on</mat-icon>
+                                    <mat-chip-grid #chipGrid aria-label="Place selection">
+                                        <mat-chip-row *ngFor="let place of selectedPlaces" (removed)="remove(place)">
+                                            {{ place.name }}
+                                            <button matChipRemove [attr.aria-label]="'remove ' + place">
+                                                <mat-icon>cancel</mat-icon>
+                                            </button>
+                                        </mat-chip-row>
+                                    </mat-chip-grid>
+                                    <input placeholder="Select Location" #placeInput [formControl]="placeCtrl" [matChipInputFor]="chipGrid"
+                                        [matAutocomplete]="auto" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                        (matChipInputTokenEnd)="add($event)" id="location-input" #locationAutocompleteInput>
+                                    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="select($event)">
+                                        <mat-option *ngFor="let fruit of filteredPlaces | async" [value]="fruit">
+                                            {{fruit.name}}
+                                        </mat-option>
+                                    </mat-autocomplete>
+                                </mat-form-field>
+                    
+                                <button mat-raised-button color="primary">Select</button>
+                                <!-- End Of Location -->
+                            </div>
+                    
+                            <div class="saved-address-section">
+                                <p class="side-header">Saved Address</p>
+                                <div class="save-address">
+                                    <div class="saved-list">
+                                        <mat-radio-group aria-label="availability">
+                                            <mat-radio-button value="1">Vivekananda Nagar Extension, Kukatpally, Hyderabad, Telangana
+                                                500072</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                    
+                                    <div class="add-address"><a (click)="editPatientFields()">+ Add New Address</a></div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                        <!-- add address -->
+                    
+                        <div class="over-lay" *ngIf="editPatientDetails">
+                    
+                            <mat-card class="content">
+                    
+                                <div class="go-back">
+                                    <button mat-icon-button (click)="closeTab()">
+                                        <mat-icon class="close-icon">arrow_back</mat-icon>
+                                      </button>
+                                </div>
+                    
+                                <div class="add-new-header">
+                                    <p class="new-address-header">Add New Address</p>
+                                </div>
+                    
+                    
+                                <div class="address-fields">
+                                    <div class="address-input">
+                                        <input matInput type="text" placeholder="House Number / Flat Nmber" class="input-address">
+                                    </div>
+                    
+                                    <div class="address-input">
+                                        <input matInput type="text" placeholder="Street Name" class="input-address">
+                                    </div>
+                                    <div class="address-input">
+                                        <input matInput type="text" placeholder="Area Name" class="input-address">
+                                    </div>
+                                    <div class="address-input">
+                                        <input matInput type="text" placeholder="Pincode" class="input-address">
+                                    </div>
+                                    <div class="address-input">
+                                        <input matInput type="text" placeholder="Land Mark" class="input-address">
+                                    </div>
+                                </div>
+                    
+                                <div class="save-addres-button">
+                                    <button mat-raised-button color="accent" class="address-save-button">Save</button>
+                                </div>
+                    
+                            </mat-card>
+                    
+                    
+                        </div>
+                    </div>
+                    
+
+                    <div class="available-slots">
+                        <p class="s-title">Select date and time for appointment :</p>
+                        <mat-card-content>
+                            <div class="selection-wrapper">
+
+                                <mat-calendar class="calender" [(selected)]="selected"></mat-calendar>
+                                <section class="d-periods">
+                                    <div class="period" *ngFor="let available of availability">
+                                        <p><i class="fa-solid fa-sun"></i> {{ available.period }}</p>
+                                        <mat-chip-listbox aria-label="Fish selection">
+                                            <mat-chip-option *ngFor="let slot of available.slots">
+                                                {{ slot }}
+                                            </mat-chip-option>
+                                        </mat-chip-listbox>
+                                    </div>
+                                </section>
+                            </div>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+                                <button mat-flat-button color="accent" class="btn-lg">
+                                    Confirm Your Slot
+                                </button>
+                            </div>
+                        </mat-card-actions>
+                    </div>
+
+                </mat-expansion-panel>
+
+            </mat-accordion>
+        </div>
+
+        <div class="payment-details">
+            <mat-accordion class="headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Payment Details
+                        </mat-panel-title>
+                        <!-- <mat-panel-description>
+                            Type your name and age
+                            <mat-icon>account_circle</mat-icon>
+                        </mat-panel-description> -->
+                    </mat-expansion-panel-header>
+
+                    <section class="filter-by-gender">
+                        <mat-radio-group>
+
+                            <p class="s-title">Select payment method :</p>
+
+                            <div class="payment-method-1">
+                                <mat-checkbox>Credit or Debit card</mat-checkbox>
+                                <div class="card-icons">
+                                    <img src="../../assets/icons/labtest_icons/visa-card-icon.svg" alt="">
+                                    <img src="../../assets/icons/labtest_icons/master-card-icon.svg" alt="">
+                                    <img src="../../assets/icons/labtest_icons/bajaj-card.svg" alt="">
+                                    <img src="../../assets/icons/labtest_icons/maestro-card-icon.svg" alt="">
+                                </div>
+                            </div>
+                        </mat-radio-group>
+                    </section>
+
+                    <section class="filter-by-gender">
+                        <mat-radio-group>
+                            <div class="payment-method-1">
+                                <mat-checkbox>Other UPI Apps</mat-checkbox>
+                                <div class="card-icons">
+                                    <img src="../../assets/icons/labtest_icons/paytm.svg" alt="">
+                                    OR
+                                    <img src="../../assets/icons/labtest_icons/gpay.svg" alt="">
+                                </div>
+                            </div>
+                        </mat-radio-group>
+                    </section>
+
+                    <div class="upi-verification">
+                        <mat-form-field class="upi-form">
+                            <!-- <mat-label>Age</mat-label> -->
+                            <input matInput type="text" placeholder="Enter Mobile Number/ UPI ID">
+
+
+
+
+                        </mat-form-field>
+                        <button mat-raised-button color="primary">Verify</button>
+                    </div>
+
+
+                    <section class="filter-by-gender">
+                        <mat-radio-group>
+                            <div class="payment-method-1">
+                                <mat-checkbox>Pay at center</mat-checkbox>
+                                <div class="pac-desc">
+                                    <p class="pac-text">You can pay directly at the center. You will receive a
+                                        confirmation after your
+                                        booking via SMS. Please show it at the center to avail your discount.</p>
+                                </div>
+                            </div>
+                        </mat-radio-group>
+                    </section>
+
+
+                </mat-expansion-panel>
+
+            </mat-accordion>
+        </div>
+
+
+    </div>
+
+    <div class="page-assets">
+
+        <div class="doctor-details-card assets">
+            <mat-card class="applied-discount">
+                <mat-card-content>
+                    <div class="doctor-details">
+                        <div class="doctor-details-header">
+                            <p>Doctor Details</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="dr-details">
+
+                            <span class="dr-title">Dr.</span>
+                            <span class="dr-name">Self</span>
+
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="discount-coupon-card assets">
+            <mat-card class="coupon-applied">
+                <mat-card-content>
+                    <div class="disc-description">
+                        <p class="dd-1">You save <span class="color-gr">Rs.400/-</span> </p>
+                        <p class="add-01">GIFTMULTI: Add another patient and get Extra Discount!</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="login-link">
+                        <a href="/"><span class="log-01">Login to view best deals</span></a>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="total-paid-card assets">
+            <mat-card>
+                <mat-card-content class="price-desc">
+                    <div class="price-card-content"><span class="">M.R.P. Total :</span><span class="color-gr">₹
+                            1000/-</span></div>
+                    <div class="price-card-content"><span class="">Price Discount :</span><span>₹ 400/-</span></div>
+
+                    <div class="price-card-content bg-green"><span class="paid-3">TO BE PAID</span><span
+                            class="paid-3">600/-</span></div>
+
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="checkout-button">
+            <button mat-raised-button color="primary">Checkout</button>
+        </div>
+    </div>
+</div>

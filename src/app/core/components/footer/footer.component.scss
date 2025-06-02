@@ -1,0 +1,130 @@
+.d-footer {
+  background-color: #00375f;
+  color: #ffffff;
+  padding: 30px 40px 20px;
+  @media (max-width: 600px) {
+    padding: 20px 5%;
+  }
+}
+.d-footer-logo {
+  margin-bottom: 20px;
+  @media (max-width: 600px) {
+    margin-bottom: 15px;
+    text-align: center;
+    img {
+      width: 140px;
+    }
+  }
+}
+
+.d-footer-column-title {
+  @media (max-width: 600px) {
+    font-weight: 700 !important;
+  }
+}
+
+.d-footer-links-section {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0;
+  gap: 100px;
+}
+
+.d-footer-links {
+  padding-left: 0;
+  font-size: 0.938rem;
+  @media (max-width: 600px) {
+    margin-bottom: 8px !important;
+  }
+}
+.d-footer-links li {
+  list-style-type: none;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+.d-footer-links li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.d-footer-social-links {
+  a {
+    color: #ffffff;
+    font-size: 1.875rem;
+    margin-right: 15px;
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.d-footer-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  .mat-expansion-panel-body {
+    padding: 0;
+    .d-footer-links li {
+      padding: 2px 5px;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      a {
+        color: rgba(0, 0, 0, 0.87);
+        padding: 10px 20px;
+        display: block;
+      }
+    }
+  }
+}
+
+.d-footer-column {
+  @media (max-width: 600px) {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .d-footer-links-section {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .d-footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .d-footer-social-links {
+    position: relative;
+    text-align: center;
+    &::before, &::after {
+      content: "";
+      height: 1px;
+      width: 80%;
+      position: absolute;
+      left: 10%;
+      background-color: rgba(0, 28, 49, 0.5);
+      top: -15px;
+      border-radius: 50%;
+    }
+    &::after {
+      background-color: rgba(255,255,255, 0.1);
+      top: -14px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .d-footer-links-section {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .d-footer-links li {
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.services-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.d-service-list {
+    @media (max-width: 960px) {
+      font-size: 1.125rem;
+      margin-bottom: 10px;
+    }
+  }
+  
+.hospital-branch-card{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mdc-button__label{
+  color: blue;
+}

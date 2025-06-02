@@ -1,0 +1,44 @@
+.d-list {
+  list-style: none;
+  .item {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    @media (max-width: 600px) {
+      font-size: 13px !important;
+    }
+    &::before {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      content: "";
+      left: -25px;
+      z-index: 1;
+      top: 4px;
+      margin-left: -1px;
+      border-radius: 50%;
+      background-color: rgba(117, 166, 52, 1);
+    }
+    &.large {
+      font-size: 15px !important;
+      line-height: 22px;
+      font-weight: 600 !important;
+      @media (max-width: 600px) {
+        font-size: 13px !important;
+        line-height: 18px;
+      }
+      &::before {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .list-group {
+    @media (max-width: 960px) {
+      margin-bottom: 20px;
+    }
+  }
+}

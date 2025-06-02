@@ -1,0 +1,120 @@
+<div class="page-nav">
+  <div class="title">
+    <p class="title-text">Review your appointment</p>
+  </div>
+
+  <div class="title">
+    <p class="title-text">Back</p>
+  </div>
+</div>
+
+
+
+<div class="details-patient">
+  <div class="image">
+    <img class="lab-image" src="../../assets/img/labtest_search_results/labtest_image.svg" alt="image">
+  </div>
+  <div class="patient-details-section">
+    <div class="patient-details">
+      <div class="details-span">
+        <span class="sp-1">Patient Name</span>
+        <span class="sp-1">Center</span>
+        <span class="sp-1">Appointment Date & Time</span>
+        <span class="sp-1">Tests</span>
+
+        <span class="sp-3">Total Payable</span>
+
+
+      </div>
+
+      <div class="details-span">
+        <span class="sp-2">:</span>
+        <span class="sp-2">:</span>
+        <span class="sp-2">:</span>
+        <span class="sp-2">:</span>
+        <span class="sp-3">:</span>
+
+      </div>
+
+      <div class="details-span">
+        <span class="sp-2">Rahul Mishra</span>
+        <span class="sp-2">Aarthi Scans & Labs</span>
+        <span class="sp-2">09:15 AM, 15-Nov</span>
+        <span class="sp-2">CBP</span>
+        <span class="sp-3">300/-</span>
+      </div>
+    </div>
+    <!-- <div class="fee-section">
+      <div></div>
+      <div></div>
+      <div></div>
+
+
+
+    </div> -->
+  </div>
+</div>
+
+<div class="payment-gate-section">
+  <mat-tab-group class="payment-tab">
+    <mat-tab>
+      <ng-template mat-tab-label class="pay-tab">
+        <div class="label-imgs">
+          <img src="../../assets/icons/labtest_icons/paytm.svg" alt="img">
+          <p class="or">or</p>
+          <img src="../../assets/icons/labtest_icons/gpay.svg" alt="">
+        </div>
+      </ng-template>
+      <div class="desc-payment">
+        <div class="payament-tab">
+          <p>Total Payable : 300/-</p>
+        </div>
+        <div class="payment-input">
+          <form class="payment-form">
+            <mat-form-field class="upi-input">
+
+              <input type="email" matInput [formControl]="emailFormControl" placeholder="Search Mobile No. / UPI ID">
+              <!-- @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+              <mat-error>Please enter a valid email address</mat-error>
+              }
+              @if (emailFormControl.hasError('required')) {
+              <mat-error>Email is <strong>required</strong></mat-error>
+              } -->
+            </mat-form-field>
+            <button mat-button class="verify-button">Verify</button>
+          </form>
+
+        </div>
+        <div class="tab-button">
+          <button mat-raised-button color="accent" class="confirm-button">Confirm Slot</button>
+        </div>
+
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label class="pay-tab">
+        <div class="label-imgs">
+          <img src="../../assets/icons/labtest_icons/money-icon.svg" alt="img">
+          <p class="or">Pay at center</p>
+        </div>
+      </ng-template>
+      <div class="desc-payment">
+        <div class="payment-description">
+          <div class="payament-tab">
+            <p>Total Payable : 300/-</p>
+          </div>
+
+          <div class="pay-at-center">
+            <p class="pay-at-cetr-desc">You can pay directly at the center. You will receive a confirmation after your
+              booking via SMS. Please show it at the center to avail your discount.</p>
+          </div>
+
+        </div>
+        <div class="tab-button">
+          <button mat-raised-button color="accent" class="confirm-button">Confirm Slot</button>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

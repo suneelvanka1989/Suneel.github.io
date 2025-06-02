@@ -1,0 +1,36 @@
+// Reset/normalize
+.docphine-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  @media (min-width: 1280px) {
+    padding: 0 2%;
+  }
+  @media (max-width: 1280px) {
+    margin: 0 5%;
+  }
+}
+@media (max-width: 1280px) {
+  .docphine-main {
+    // margin: 0 5%;
+  }
+}
+.container {
+}
+
+a {
+  text-decoration: none;
+  &.link {
+    color: rgba(0, 118, 215, 1);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+p {
+  line-height: 1.25rem;
+}

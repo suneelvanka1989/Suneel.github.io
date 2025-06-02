@@ -1,0 +1,248 @@
+<div class="lab-search-home">
+  <div class="lab-search-banner">
+    <div class="labtest-main">
+      <mat-form-field appearance="outline" class="d-location">
+        <mat-icon matPrefix>location_on</mat-icon>
+        <input matInput type="search" placeholder="Enter location" />
+        <mat-autocomplete autoActiveFirstOption #location="matAutocomplete">
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="d-main-search search-doctor-input">
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput type="search" placeholder="Search here Doctor Name, Hospital, Clinic, etc."
+          aria-label="State" class="hospital-doctor-input"/>
+        <mat-autocomplete #mainSeach="matAutocomplete">
+          <mat-option>
+            <mat-icon matPrefix>search</mat-icon>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <button class="main-search-button" mat-raised-button color="accent" (click)="navigateToSearchResults(results)">Search</button>
+    </div>
+
+    <div class="search-banner-container">
+      <div class="search-banner-iamge">
+        <img src="../../../assets/img/labtests/search-banner-image.svg" alt="lab-test-image">
+      </div>
+      <div class="d-banner-content">
+        <p class="banner-content">"Empowering Health through Precision Diagnosis: <span class="banner-text">Your Path to
+            Clarity Begins
+            Here.</span>"</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="search-page-container">
+    <div class="d-benfits-list">
+      <div class="d-benfit">
+        <div class="d-icon">
+          <img src="../../../assets/icons/sample_collection.svg" alt="sample_collection">
+        </div>
+        <div class="benfit">
+          <p>FREE SAMPLE COLLECTION</p>
+        </div>
+      </div>
+
+      <div class="d-benfit">
+        <div class="d-icon">
+          <img src="../../../assets/icons/bi_cash-coin.svg" alt="cash_payment_icon">
+        </div>
+        <div class="benfit">
+          <p>EASY CASH PAYMENT</p>
+        </div>
+      </div>
+
+      <div class="d-benfit">
+        <div class="d-icon">
+          <img src="../../../assets/icons/money_refund.svg" alt="money_refund_icon">
+        </div>
+        <div class="benfit">
+          <p>EASY REFUND</p>
+        </div>
+      </div>
+
+      <div class="d-benfit">
+        <div class="d-icon">
+          <img src="../../../assets/icons/certificate.svg" alt="certificate_svg_icon">
+        </div>
+        <div class="benfit">
+          <p>CERTIFIED LABS</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="popular-labs-header-section">
+  <p class="popular-labs-header">Popular health checkups</p>
+</div>
+
+
+
+
+
+
+<!-- <div class="popular-labs-section"> -->
+
+<div class="slider">
+  <owl-carousel-o [options]="cardOptions" class="discount-coupon-carousel lab-test-discounts-carousel">
+    <ng-template carouselSlide *ngFor="let a of [1, 2, 3, 4, 5, 6]">
+      <div class="wrapper">
+        <div class="popular-labs-card">
+  
+  
+  
+  
+  
+          <div>
+            <mat-card class="checkup-card">
+              <mat-card-header>
+                <div class="card-header">
+                  <div class="c-header">
+                    <p class="card-title">{{testName}}</p>
+                  </div>
+                  <div class="discount">
+                    <p class="percentage">{{discount}}% Off</p>
+                  </div>
+                </div>
+  
+              </mat-card-header>
+              <p class="service-type">Home Service available</p>
+  
+              <mat-card-content class="notice-points">
+                <span class="note list-content">Note :</span>
+                <li class="note-description list-content">Reports available in: 48hours after test / sample collection
+                </li>
+              </mat-card-content>
+              <mat-card-content>
+                <div class="prices">
+                  <p class="discount-price">{{price | currency : 'INR'}}</p>
+                  <p class="original-price"><s>{{originalPrice | currency : 'INR'}}/-</s></p>
+                </div>
+              </mat-card-content>
+  
+  
+              <!-- <div class="add-cart-button">
+              <mat-card-actions>
+                <button mat-raised-button color="accent">ADD TO CART</button>
+              </mat-card-actions>
+            </div> -->
+  
+              <div class="mydivouter cart-button">
+                <mat-card-actions class="overlay-button">
+                  <button mat-raised-button class="overlapbutton">ADD TO CART</button>
+                </mat-card-actions>
+              </div>
+            </mat-card>
+          </div>
+  
+  
+        </div>
+      </div>
+    </ng-template>
+   
+  </owl-carousel-o>
+</div>
+
+
+
+<!-- <div class="popular-labs-card" *ngFor="let a of [1, 2, 3, 4, 5, 6]">
+
+
+    <mat-card class="lab-card">
+      <mat-card-header>
+        <p class="card-title">Mri Brain with Cisternography</p>
+      </mat-card-header>
+      <p class="service-type">Home Service available</p>
+      
+      <mat-card-content>
+        <span class="note list-content">Note :</span>
+        <li class="note-description list-content">Reports available in: 48hours after test / sample collection</li>
+      </mat-card-content>
+      <mat-card-content>
+        <div class="prices">
+          <p class="discount-price">₹. {{discountPrice}}/-</p>
+          <p class="original-price">₹. {{originalPrice}}/-</p>
+        </div>
+      </mat-card-content>
+      <div class="discount">
+        <p class="percentage">{{discount}}% Off</p>
+      </div>
+
+      <div class="add-cart-button">
+        <mat-card-actions>
+          <button mat-raised-button color="accent">ADD TO CART</button>
+        </mat-card-actions>
+      </div>
+    </mat-card>
+  </div> -->
+<!-- </div> -->
+
+<div class="browsing-banner">
+  <div class="browsing-img">
+    <img src="../../../assets/img/labtests/browsing-online-img.svg" alt="image">
+  </div>
+
+  <div class="view-more-section">
+    <p class="view-more-title">Find the right health package for you</p>
+    <div class="button-view-more">
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="navigateToPackages(morePackages)">View More</button>
+      </mat-card-actions>
+    </div>
+  </div>
+</div>
+
+
+<div class="lab-assets-section">
+  <p class="assets-header">Search Test by top Health concerns</p>
+
+  <div class="asset-section">
+    <div class="lab-assets">
+      <a class="landing-thumbnail fever">
+        <figure></figure>
+        <h3>Fever</h3>
+      </a>
+    </div>
+
+    <div class="lab-assets">
+      <a class="landing-thumbnail diabetes">
+        <figure></figure>
+        <h3>Diabetes</h3>
+      </a>
+    </div>
+
+    <div class="lab-assets">
+      <a class="landing-thumbnail kidney">
+        <figure></figure>
+        <h3>Kidney</h3>
+      </a>
+    </div>
+
+    <div class="lab-assets">
+      <a class="landing-thumbnail digestion">
+        <figure></figure>
+        <h3>Digestion</h3>
+      </a>
+    </div>
+
+    <div class="lab-assets">
+      <a class="landing-thumbnail bones">
+        <figure></figure>
+        <h3>Bones</h3>
+      </a>
+    </div>
+
+    <div class="lab-assets">
+      <a class="landing-thumbnail wellness">
+        <figure></figure>
+        <h3>Sexual wellness</h3>
+      </a>
+    </div>
+  </div>
+
+</div>

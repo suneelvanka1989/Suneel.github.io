@@ -1,0 +1,112 @@
+<div class="lab-profile-header">
+    <h3 class="profile-header">Home service</h3>
+    <p>Get test samples collected for free from your doorsteps</p>
+</div>
+
+<div class="home-service-page">
+
+    <div *ngIf="show">
+        <div class="mobile-location-select text-center">
+            <!-- Location -->
+            <mat-form-field style="width: 75%;" class="d-custom-input-text">
+                <mat-icon matPrefix>location_on</mat-icon>
+                <mat-chip-grid #chipGrid aria-label="Place selection">
+                    <mat-chip-row *ngFor="let place of selectedPlaces" (removed)="remove(place)">
+                        {{ place.name }}
+                        <button matChipRemove [attr.aria-label]="'remove ' + place">
+                            <mat-icon>cancel</mat-icon>
+                        </button>
+                    </mat-chip-row>
+                </mat-chip-grid>
+                <input placeholder="Select Location" #placeInput [formControl]="placeCtrl" [matChipInputFor]="chipGrid"
+                    [matAutocomplete]="auto" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                    (matChipInputTokenEnd)="add($event)" id="location-input" #locationAutocompleteInput>
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                    <mat-option *ngFor="let fruit of filteredPlaces | async" [value]="fruit">
+                        {{fruit.name}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary">Select</button>
+            <!-- End Of Location -->
+        </div>
+
+        <div class="saved-address-section">
+            <p class="side-header">Saved Address</p>
+            <div class="save-address">
+                <div class="saved-list">
+                    <mat-radio-group aria-label="availability">
+                        <mat-radio-button value="1">Vivekananda Nagar Extension, Kukatpally, Hyderabad, Telangana
+                            500072</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <div class="add-address"><a (click)="editPatientFields()">+ Add New Address</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- add address -->
+
+    <div class="over-lay" *ngIf="editPatientDetails">
+
+        <mat-card class="content">
+
+            <div class="go-back">
+                <button mat-icon-button (click)="closeTab()">
+                    <mat-icon class="close-icon">arrow_back</mat-icon>
+                  </button>
+            </div>
+
+            <div class="add-new-header">
+                <p class="new-address-header">Add New Address</p>
+            </div>
+
+
+            <div class="address-fields">
+                <div class="address-input">
+                    <input matInput type="text" placeholder="House Number / Flat Nmber" class="input-address">
+                </div>
+
+                <div class="address-input">
+                    <input matInput type="text" placeholder="Street Name" class="input-address">
+                </div>
+                <div class="address-input">
+                    <input matInput type="text" placeholder="Area Name" class="input-address">
+                </div>
+                <div class="address-input">
+                    <input matInput type="text" placeholder="Pincode" class="input-address">
+                </div>
+                <div class="address-input">
+                    <input matInput type="text" placeholder="Land Mark" class="input-address">
+                </div>
+            </div>
+
+            <div class="save-addres-button">
+                <button mat-raised-button color="accent" class="address-save-button">Save</button>
+            </div>
+
+        </mat-card>
+
+
+    </div>
+
+
+
+    <!-- for home service not available -->
+
+    <div class="service-not-available" *ngIf="!show">
+
+        <p>Home service is not available at this moment. </p>
+        <p>Please visit given branch address for further assistance : </p>
+
+        <p class="branch-address">MIG - 148 - I - NCK 24/240, Road No 1 KPHB Colony, Opposite To Sankhya Hospital,
+            Kukatpally, Hyderabad - 500072, Kukatpally, Hyderabad - 500072</p>
+
+        <p>Or</p>
+
+        <a href="/">Change Clinic</a>
+    </div>
+</div>

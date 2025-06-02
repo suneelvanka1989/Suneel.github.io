@@ -1,0 +1,49 @@
+.d-timeline {
+  .item {
+    position: relative;
+    min-height: 20px;
+    &::before {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      content: "";
+      left: -25px;
+      z-index: 1;
+      top: 2px;
+      margin-left: -1px;
+      border-radius: 50%;
+      border: 2px solid rgba(117, 166, 52, 1);
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &::after {
+      width: 2px;
+      z-index: 2;
+      position: absolute; 
+      height: calc(100% - 13px);
+      content: "";
+      background: rgba(117, 166, 52, 1);
+      top: 16px;
+      left: -19px;
+    }
+    &:last-of-type::after {
+        display: none;
+    }
+    h5 {
+      font-size: 0.938rem;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 0 !important;
+    }
+    .d-flex {
+      gap: 50px;
+    }
+  }
+  &.d-service-list .item {
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    line-height: 20px;
+    padding-bottom: 5px;
+  }
+}

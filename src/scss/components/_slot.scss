@@ -1,0 +1,17 @@
+.d-periods {
+  .period {
+    padding-bottom: 20px;
+    p i {
+      padding: 5px;
+      background: $custom-primary;
+      border-radius: 100%;
+      color: white;
+    }
+    .mat-mdc-chip-listbox {
+      padding-left: 10px;
+    }
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 960px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./scss/main.scss";
+body, * {
+  margin: 0;
+  font-family: Poppins;
+}
+

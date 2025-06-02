@@ -1,0 +1,19 @@
+.logo {
+  flex: 1;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+
+.d-nav-header {
+    &.mat-toolbar.mat-primary {
+        background-color: white;
+    }
+    .mat-mdc-button:not(:disabled) {
+        color: $black !important;
+    }
+}

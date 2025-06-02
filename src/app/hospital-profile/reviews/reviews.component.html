@@ -1,0 +1,49 @@
+<div class="d-profile-queries">
+  <div class="pt-20">
+    <p class="text-center d-paragraph-medium">Leave your valuable comments here</p>
+  </div>
+  <hr class="hr-light" />
+
+  <app-shared-rating></app-shared-rating>
+
+  <div class="d-profile-review mb-20" fxLayout="row">
+    <div class="form-container w-100">
+      <mat-form-field class="d-text-area">
+        <mat-label>Drop Your comment Here</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <p class="text-center">
+    <button mat-flat-button color="primary">Submit</button>
+  </p>
+  <hr class="hr-light" />
+
+  <div class="media media-container" *ngFor="let info of [1, 2, 3]">
+    <a href="#">
+      <img class="mr-3" data-src="holder.js/64x64" alt="64x64"
+        src="../../../assets/icons/lab-profile/profile-icon.svg"
+        data-holder-rendered="true" style="width: 64px; height: 64px" /></a>
+    <div class="media-body">
+      <div fxLayout="row">
+        <div>
+          <a href="#">
+            <h5 class="mb-0">Media Heading</h5>
+          </a>
+          <small class="mb-5 d-block">(Male) (35) (Bangalore)</small>
+          <p>
+            I recommend the doctor !
+            Doctor was great . She listened to me carefully and helped understanding what's wrong . Then suggested meds.
+          </p>
+        </div>
+        <div class="nowrap"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+      </div>
+      <div fxLayout="  review-actions">
+        <a mat-button target="_blank" class="mr-2"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Useful</a>
+        <a mat-button target="_blank" class="mr-2"><i class="fa fa-comment" aria-hidden="true"></i> Comment</a>
+        <a mat-button target="_blank" class="mr-2"><i class="fa fa-share-square" aria-hidden="true"></i> Share</a>
+      </div>
+    </div>
+  </div>
+  <!-- End of Media -->
+</div>
